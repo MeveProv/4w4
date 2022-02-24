@@ -1,0 +1,25 @@
+.recherche{
+background-color:transparent;
+position: relative;
+
+
+    &__input{
+        background-color:transparent;
+        border: 2px solid white;
+       
+
+    }
+    &__bouton{
+       position: absolute;
+       top: 0;
+       //right: 0;
+      
+      
+
+        
+
+    }
+    svg{
+
+    }
+}

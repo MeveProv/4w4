@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /*
 theme name: lab4 gr2 marie
+author : Marie-Eve Provost
+author URI: https://github.com/MeveProv/4w4.git
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -565,6 +567,7 @@ svg:hover {
   outline: none;
   position: relative;
   height: 40px;
+  margin-right: 50px;
 }
 
 .recherche__bouton {
@@ -575,7 +578,7 @@ svg:hover {
   .recherche__bouton {
     display: flex;
     flex-direction: row;
-    height: 40px;
+    height: 41px;
   }
 }
 
@@ -723,6 +726,21 @@ div.animation__bloc:hover {
 
 .cours__contenu {
   display: flex;
+}
+
+.recherche {
+  background-color: transparent;
+  position: relative;
+}
+
+.recherche__input {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.recherche__bouton {
+  position: absolute;
+  top: 0;
 }
 
 /* ---------------------------------------------------------
