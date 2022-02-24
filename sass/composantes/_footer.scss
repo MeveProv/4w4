@@ -15,9 +15,18 @@
               display : flex;
               align-items: center;
               padding : 3px;
+              background-color: transparent;
+              border: none;
+              &:hover{
+                color: aliceblue;
+                box-shadow: rgba(177, 150, 228, 0) 1px -1px 10px;
+              } 
+              
               svg { // .site__footer__menu__ul .menu-item a svg
-                color: aqua;
+                color: rgb(44, 204, 204);
+                padding-right: 5px;
               }
+              
             }
           }
       }
@@ -26,7 +35,7 @@
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: $color__font-footer;
+  color:  aqua;;
   text-align: center;
 }
 

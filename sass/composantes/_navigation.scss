@@ -4,6 +4,9 @@
     transition : transform .3s;
     transform : rotate(0);
 }
+#chk-burger{
+    display: none;
+}
 
 #chk-burger:checked ~ #burger {
     transform : rotate(90deg);
@@ -19,20 +22,58 @@
 .menu-principal-container{}
 .menu{
     list-style-type: none;
+    text-align: center;
     margin : 0;
     padding :0;
+   
 }
 .menu-item{
     margin:0;
-    padding : 0;
+    padding : 10px;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+   
+    
+    
+    //a{
+       // display : block;
+        //text-decoration: none;
+        //padding : 4px;
+        //background-color: $color__background-link;
+        //&:hover {
+            //background-color: $color__background-link-hover;
+       // }
+    //}
     a{
-        display : block;
         text-decoration: none;
-        padding : 4px;
-        background-color: $color__background-link;
-        &:hover {
-            background-color: $color__background-link-hover;
-        }
+        display:flex;
+        //flex-direction: column;
+        justify-content: center;
+     border: solid 1px white;
+        height: 50px;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        color: aqua;
+        background-color: rgb(78, 78, 78);
+        font-size: 1.2rem;
+       
+    }
+    //a{
+      //  color: rgb(240, 171, 82);
+     
+       // font-family: $font__main;
+    ////}
+    a:hover{//
+        //background-color: transparent; 
+        background-color: rgb(41, 40, 40);
+       color:  hsl(231, 75%, 70%);
+       box-shadow: rgb(177, 150, 228) 1px -1px 10px;
+       
     }
 }
 

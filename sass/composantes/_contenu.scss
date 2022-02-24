@@ -3,16 +3,18 @@
     padding: 10px 15px;
     background-color: $color__background-main;
     border-radius: 5px;
-    box-shadow: rgb(57, 68, 62) 1px -1px 10px;
+   
+   
 }
 
 .formation {
     display: flex;
     flex-direction: column;
+   
 
     &__titre {
         font-size: 2rem;
-        color: $color__font-main;
+        color: white;
         margin: 10px 0px;
         font-family: $font__titre;
     }
@@ -23,12 +25,19 @@
     
     &__cours {
         background-color: $color__background-cours;
-        box-shadow: rgb(57, 64, 68) 1px -1px 10px;
-        border-radius: 5px;
+        box-shadow: rgb(177, 150, 228) 1px -1px 10px;
+        border: solid 3px hsl(231, 75%, 70%);
+       
+       
         margin: 10px;
         display: flex;
         flex-direction: column;
         width: 100%;
+        //&:hover{
+            //background-color: transparent;
+            //color: azure;
+           
+       // }
         @media screen and (min-width : $largeur__media--tablette){
             width: 45%;
         }
@@ -46,17 +55,28 @@
 
 
 .cours__titre {
-    font-size: 1.5rem;
-    color: $color__font-main;
+    font-size: 1.7rem;
+    color: rgb(92, 143, 145);
+    text-shadow: 1px 1px 1px black;
     margin: 5px 0px;
 }
 
 .cours__sigle {
     font-size: 1.2rem;
-    color: rgb(138, 83, 83);
+    color: rgb(129, 153, 102);
     margin: 0;
 }
 
 .cours__description {
     font-size: 1rem;
+}
+.site__main p{
+    color: rgb(226, 226, 226);
+    font-size: 1.2rem;
+    padding-left: 20px;
+    
+}
+.site__main h1{
+    color: rgb(126, 160, 95);
+    padding-left: 20px;
 }

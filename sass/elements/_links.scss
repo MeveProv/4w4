@@ -37,3 +37,13 @@ a {
 					$color__link__footer-hover );
 }
 
+.site__header a {
+
+	@include links(	$color__link__header,
+	$color__link__header-visited, 
+	$color__link__header-hover )
+}	
+a{
+	color: rgb(129, 153, 102);
+	text-decoration: none;
+}

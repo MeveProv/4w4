@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Exer-1 gr3
+theme name: lab4 gr2 marie
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -8,6 +8,7 @@ VARIABLES
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
+/* ---------------- LIENS HEADER */
 /* ---------------- FONT */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
@@ -338,11 +339,11 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b5647;
+  color: #cadd73;
 }
 
 a:visited {
-  color: #5c4033;
+  color: #819966;
 }
 
 a:hover, a:focus, a:active {
@@ -358,15 +359,15 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #f40b0b;
+  color: #f85454;
 }
 
 .site__footer a:visited {
-  color: #1435eb;
+  color: #798aec;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #19e123;
+  color: #84d288;
 }
 
 .site__footer a:focus {
@@ -377,15 +378,39 @@ a:hover, a:active {
   outline: 0;
 }
 
+.site__header a {
+  color: #e7e58d;
+}
+
+.site__header a:visited {
+  color: #67e4c9;
+}
+
+.site__header a:hover, .site__header a:focus, .site__header a:active {
+  color: #e2e5f3;
+}
+
+.site__header a:focus {
+  outline: thin dotted;
+}
+
+.site__header a:hover, .site__header a:active {
+  outline: 0;
+}
+
+a {
+  color: #819966;
+  text-decoration: none;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #eca7a7;
+  background-color: #343232;
   border-radius: 5px;
-  box-shadow: #39443e 1px -1px 10px;
 }
 
 .formation {
@@ -395,7 +420,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #443936;
+  color: white;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -406,9 +431,9 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
-  box-shadow: #394044 1px -1px 10px;
-  border-radius: 5px;
+  background-color: #e6e5e0;
+  box-shadow: #b196e4 1px -1px 10px;
+  border: solid 3px #798aec;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -429,14 +454,15 @@ COMPOSANTES
 }
 
 .cours__titre {
-  font-size: 1.5rem;
-  color: #443936;
+  font-size: 1.7rem;
+  color: #5c8f91;
+  text-shadow: 1px 1px 1px black;
   margin: 5px 0px;
 }
 
 .cours__sigle {
   font-size: 1.2rem;
-  color: #8a5353;
+  color: #819966;
   margin: 0;
 }
 
@@ -444,10 +470,23 @@ COMPOSANTES
   font-size: 1rem;
 }
 
+.site__main p {
+  color: #e2e2e2;
+  font-size: 1.2rem;
+  padding-left: 20px;
+}
+
+.site__main h1 {
+  color: #7ea05f;
+  padding-left: 20px;
+}
+
 .site__header {
-  background-color: #594036;
-  color: #fa9292;
-  padding-left: 10px;
+  background-color: #759694;
+  color: #3f3d3d;
+  padding-left: 40px;
+  box-shadow: #96c7e4 1px -1px 10px;
+  border: 1px solid white;
 }
 
 .site__header .header__titre {
@@ -455,15 +494,99 @@ COMPOSANTES
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.site__header .header__desc {
+.site__header .header__description {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 40px;
+}
+
+svg {
+  color: #1d1b1b;
+}
+
+svg:hover {
+  color: white;
+}
+
+.site__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header {
+    flex-direction: row;
+  }
+}
+
+.site__header__titre {
+  display: flex;
+  align-items: center;
+}
+
+.site__header__titre h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.site__header__titre h2 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+.utile {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .utile {
+    align-items: center;
+  }
+}
+
+.recherche {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 800px) {
+  .recherche {
+    display: flex;
+  }
+}
+
+.recherche__input {
+  outline: none;
+  position: relative;
+  height: 40px;
+}
+
+.recherche__bouton {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .recherche__bouton {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+  }
 }
 
 #burger {
   position: absolute;
   transition: transform .3s;
   transform: rotate(0);
+}
+
+#chk-burger {
+  display: none;
 }
 
 #chk-burger:checked ~ #burger {
@@ -480,24 +603,37 @@ COMPOSANTES
 
 .menu {
   list-style-type: none;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
 
 .menu-item {
   margin: 0;
-  padding: 0;
+  padding: 10px;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-item a {
-  display: block;
   text-decoration: none;
-  padding: 4px;
-  background-color: #ffa3a3;
+  display: flex;
+  justify-content: center;
+  border: solid 1px white;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  color: aqua;
+  background-color: #4e4e4e;
+  font-size: 1.2rem;
 }
 
 .menu-item a:hover {
-  background-color: #ffd1d1;
+  background-color: #292828;
+  color: #798aec;
+  box-shadow: #b196e4 1px -1px 10px;
 }
 
 @media screen and (min-width: 800px) {
@@ -511,7 +647,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #2f2a28;
+  background-color: #1d1b1b;
   padding: 15px;
 }
 
@@ -529,17 +665,64 @@ COMPOSANTES
   display: flex;
   align-items: center;
   padding: 3px;
+  background-color: transparent;
+  border: none;
+}
+
+.site__footer__menu__ul .menu-item a:hover {
+  color: aliceblue;
+  box-shadow: rgba(177, 150, 228, 0) 1px -1px 10px;
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: aqua;
+  color: #2ccccc;
+  padding-right: 5px;
 }
 
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: #ffcabc;
+  color: aqua;
   text-align: center;
+}
+
+div.animation__bloc:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.animation {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.animation__bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+  color: #df6f6f;
+  animation: anim_bloc 1s  1s forwards ease-in-out;
+}
+
+@keyframes anim_bloc {
+  0% {
+    transform: translateY(-100vh);
+  }
+  75% {
+    transform: translateY(500px) rotate(360deg);
+  }
+  100% {
+    transform: translateY(10px) rotate(360deg);
+  }
+}
+
+.cours__contenu {
+  display: flex;
 }
 
 /* ---------------------------------------------------------
@@ -549,28 +732,28 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: #957365;
+  background-color: #343232;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #594036;
+  background-color: #759694;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #ff8585;
+  background-color: transparent;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #eca7a7;
+  background-color: #343232;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #2f2a28;
+  background-color: #1d1b1b;
 }
 
 .site {
