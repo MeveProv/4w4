@@ -1,6 +1,7 @@
 .recherche{
 background-color:transparent;
 position: relative;
+padding-right: 40px;
 
 
     &__input{
@@ -10,9 +11,11 @@ position: relative;
 
     }
     &__bouton{
-       position: absolute;
+       //position: absolute;
        top: 0;
-       //right: 0;
+      
+    
+      
       
       
 

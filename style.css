@@ -554,7 +554,6 @@ svg:hover {
 
 .recherche {
   display: flex;
-  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 800px) {
@@ -567,7 +566,6 @@ svg:hover {
   outline: none;
   position: relative;
   height: 40px;
-  margin-right: 50px;
 }
 
 .recherche__bouton {
@@ -652,6 +650,8 @@ svg:hover {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #1d1b1b;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .site__footer__menu__ul {
@@ -682,10 +682,22 @@ svg:hover {
   padding-right: 5px;
 }
 
-.footer__titre,
+.footer__titre {
+  color: #798aec;
+  text-align: center;
+}
+
 .footer__presentation,
 .footer__author {
   color: aqua;
+  text-align: center;
+}
+
+.site__footer svg {
+  color: aliceblue;
+}
+
+.iconeFooter {
   text-align: center;
 }
 
@@ -709,7 +721,7 @@ div.animation__bloc:hover {
   border-radius: 50%;
   background-color: black;
   color: #df6f6f;
-  animation: anim_bloc 1s  1s forwards ease-in-out;
+  animation: anim_bloc 1s 1s forwards ease-in-out;
 }
 
 @keyframes anim_bloc {
@@ -731,6 +743,7 @@ div.animation__bloc:hover {
 .recherche {
   background-color: transparent;
   position: relative;
+  padding-right: 40px;
 }
 
 .recherche__input {
@@ -739,7 +752,6 @@ div.animation__bloc:hover {
 }
 
 .recherche__bouton {
-  position: absolute;
   top: 0;
 }
 
