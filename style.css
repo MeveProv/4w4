@@ -3,6 +3,7 @@
 theme name: lab4 gr2 marie
 author : Marie-Eve Provost
 author URI: https://github.com/MeveProv/4w4.git
+
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -11,7 +12,15 @@ VARIABLES
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS HEADER */
-/* ---------------- FONT */
+/* ---------------- FONT header */
+/* ---------------- Menu FOOTER */
+/* ---------------- Menu principal */
+/*$color__link__menu__principal:hsl(46, 65%, 73%);
+$color__link__menu__principal-visited:hsl(46, 65%, 73%);
+$color__link__menu__principal-hover:hsl(46, 65%, 73%);
+$background__link__menu__principal:hsl(46, 65%, 73%);
+$background__link__menu__principal-visited:hsl(46, 65%, 73%);
+$background__link__menu__principal-hover:hsl(46, 65%, 73%);*/
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -340,6 +349,7 @@ html {
 /* ---------------------------------------------------------
 ÉLÉMENTS
 --------------------------------------------------------- */
+/*mixin footer*/
 a {
   color: #cadd73;
 }
@@ -403,6 +413,29 @@ a:hover, a:active {
 a {
   color: #819966;
   text-decoration: none;
+}
+
+.site__footer .menu-item a {
+  color: #f0efd0;
+  background-color: #aae78d;
+}
+
+.site__footer .menu-item a:visited {
+  color: #74744e;
+  background-color: #d28de7;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
+  color: #faf0db;
+  background-color: #df6f6f;
+}
+
+.site__footer .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:active {
+  outline: 0;
 }
 
 /* ---------------------------------------------------------
@@ -668,12 +701,19 @@ svg:hover {
   display: flex;
   align-items: center;
   padding: 3px;
-  background-color: transparent;
+  height: 30px;
+  width: 110px;
   border: none;
 }
 
+@media screen and (min-width: 800px) {
+  .site__footer__menu__ul .menu-item a {
+    height: 30px;
+    width: 130px;
+  }
+}
+
 .site__footer__menu__ul .menu-item a:hover {
-  color: aliceblue;
   box-shadow: rgba(177, 150, 228, 0) 1px -1px 10px;
 }
 
