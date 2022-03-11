@@ -1,6 +1,7 @@
 <?php get_header() ?>
 <main class="principal">
-    <h1>----front-page.php----</h1>
+    <h1></h1>
+    <!----front-page.php---->
     <section class="animation">
         <div class="animation__bloc">Graphisme</div>
         <div class="animation__bloc">Vidéo</div>

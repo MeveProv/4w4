@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /*
 theme name: lab4 gr2 marie
+author : Marie-Eve Provost
+author URI: https://github.com/MeveProv/4w4.git
+
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -9,7 +12,15 @@ VARIABLES
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS HEADER */
-/* ---------------- FONT */
+/* ---------------- FONT header */
+/* ---------------- Menu FOOTER */
+/* ---------------- Menu principal */
+/*$color__link__menu__principal:hsl(46, 65%, 73%);
+$color__link__menu__principal-visited:hsl(46, 65%, 73%);
+$color__link__menu__principal-hover:hsl(46, 65%, 73%);
+$background__link__menu__principal:hsl(46, 65%, 73%);
+$background__link__menu__principal-visited:hsl(46, 65%, 73%);
+$background__link__menu__principal-hover:hsl(46, 65%, 73%);*/
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -338,6 +349,7 @@ html {
 /* ---------------------------------------------------------
 ÉLÉMENTS
 --------------------------------------------------------- */
+/*mixin footer*/
 a {
   color: #cadd73;
 }
@@ -401,6 +413,29 @@ a:hover, a:active {
 a {
   color: #819966;
   text-decoration: none;
+}
+
+.site__footer .menu-item a {
+  color: #f0efd0;
+  background-color: #aae78d;
+}
+
+.site__footer .menu-item a:visited {
+  color: #74744e;
+  background-color: #d28de7;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
+  color: #faf0db;
+  background-color: #df6f6f;
+}
+
+.site__footer .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:active {
+  outline: 0;
 }
 
 /* ---------------------------------------------------------
@@ -492,6 +527,7 @@ COMPOSANTES
 .site__header .header__titre {
   font-size: 3em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding-left: 10px;
 }
 
 .site__header .header__description {
@@ -552,7 +588,6 @@ svg:hover {
 
 .recherche {
   display: flex;
-  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 800px) {
@@ -575,7 +610,7 @@ svg:hover {
   .recherche__bouton {
     display: flex;
     flex-direction: row;
-    height: 40px;
+    height: 41px;
   }
 }
 
@@ -649,6 +684,8 @@ svg:hover {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #1d1b1b;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .site__footer__menu__ul {
@@ -664,13 +701,19 @@ svg:hover {
 .site__footer__menu__ul .menu-item a {
   display: flex;
   align-items: center;
-  padding: 3px;
-  background-color: transparent;
+  height: 50px;
+  width: 200px;
   border: none;
 }
 
+@media screen and (min-width: 800px) {
+  .site__footer__menu__ul .menu-item a {
+    height: 30px;
+    width: 130px;
+  }
+}
+
 .site__footer__menu__ul .menu-item a:hover {
-  color: aliceblue;
   box-shadow: rgba(177, 150, 228, 0) 1px -1px 10px;
 }
 
@@ -679,10 +722,22 @@ svg:hover {
   padding-right: 5px;
 }
 
-.footer__titre,
+.footer__titre {
+  color: #798aec;
+  text-align: center;
+}
+
 .footer__presentation,
 .footer__author {
   color: aqua;
+  text-align: center;
+}
+
+.site__footer svg {
+  color: aliceblue;
+}
+
+.iconeFooter {
   text-align: center;
 }
 
@@ -706,7 +761,7 @@ div.animation__bloc:hover {
   border-radius: 50%;
   background-color: black;
   color: #df6f6f;
-  animation: anim_bloc 1s  1s forwards ease-in-out;
+  animation: anim_bloc 1s 1s forwards ease-in-out;
 }
 
 @keyframes anim_bloc {
@@ -725,6 +780,21 @@ div.animation__bloc:hover {
   display: flex;
 }
 
+.recherche {
+  background-color: transparent;
+  position: relative;
+  padding-right: 40px;
+}
+
+.recherche__input {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.recherche__bouton {
+  top: 0;
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -732,13 +802,27 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: #343232;
+  background-color: rgba(52, 50, 50, 0.9);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0d0e0d;
+  z-index: -1;
+  clip-path: polygon(85% 0, 100% 0, 100% 100%, 19% 100%);
 }
 
 .site__header {
   grid-area: header;
-  background-color: #759694;
+  background-color: rgba(117, 150, 148, 0.8);
 }
 
 .site__barre {
@@ -748,7 +832,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main {
   grid-area: main;
-  background-color: #343232;
+  background-color: rgba(52, 50, 50, 0.8);
 }
 
 .site__footer {

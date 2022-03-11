@@ -2,8 +2,13 @@
     font-family: $font__titre;
     background-color: $color__background-footer;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+  
 
     &__menu{ // .site__footer__menu
+  
+    
 
       &__ul{ // .site__footer__menu__ul
           display : flex;
@@ -14,11 +19,22 @@
             a{ // .site__footer__menu__ul .menu-item a
               display : flex;
               align-items: center;
-              padding : 3px;
-              background-color: transparent;
+              //padding : 3px;
+             height: 50px;
+             width: 200px;
+             @media screen and (min-width : $largeur__media--tablette) {
+              height: 30px;
+              width: 130px;
+             
+          
+          
+          
+          
+            }
+             
               border: none;
               &:hover{
-                color: aliceblue;
+                //color: aliceblue;
                 box-shadow: rgba(177, 150, 228, 0) 1px -1px 10px;
               } 
               
@@ -32,11 +48,23 @@
       }
     }
   }
-.footer__titre,
+.footer__titre{
+  color: hsl(231, 75%, 70%);
+  text-align: center;
+}
 .footer__presentation,
 .footer__author {
   color:  aqua;;
   text-align: center;
+}
+.site__footer svg{
+  color: aliceblue;
+
+}
+.iconeFooter{
+  text-align: center;
+ 
+ 
 }
 
 
