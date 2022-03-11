@@ -527,6 +527,7 @@ COMPOSANTES
 .site__header .header__titre {
   font-size: 3em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding-left: 10px;
 }
 
 .site__header .header__description {
@@ -700,9 +701,8 @@ svg:hover {
 .site__footer__menu__ul .menu-item a {
   display: flex;
   align-items: center;
-  padding: 3px;
-  height: 30px;
-  width: 110px;
+  height: 50px;
+  width: 200px;
   border: none;
 }
 
@@ -802,13 +802,27 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: #343232;
+  background-color: rgba(52, 50, 50, 0.9);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0d0e0d;
+  z-index: -1;
+  clip-path: polygon(85% 0, 100% 0, 100% 100%, 19% 100%);
 }
 
 .site__header {
   grid-area: header;
-  background-color: #759694;
+  background-color: rgba(117, 150, 148, 0.8);
 }
 
 .site__barre {
@@ -818,7 +832,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main {
   grid-area: main;
-  background-color: #343232;
+  background-color: rgba(52, 50, 50, 0.8);
 }
 
 .site__footer {
