@@ -21,7 +21,7 @@
               align-items: center;
               //padding : 3px;
              height: 50px;
-             width: 200px;
+             //width: 200px;
              @media screen and (min-width : $largeur__media--tablette) {
               height: 30px;
               width: 130px;
@@ -61,15 +61,7 @@
   text-align: center;
 
 }
-.site__footer svg{
-  color: aliceblue;
 
-}
-.iconeFooter{
-  text-align: center;
- 
- 
-}
 .site__footer__colonne{
   display: flex;
   flex-direction: row;
@@ -78,9 +70,9 @@
 .site__footer__ligne{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  
+  font-size: 1rem;
+  
 }
-
-
-

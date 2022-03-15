@@ -53,7 +53,7 @@
 ?>
 
 </section>
-<section class="footer__reseaux">
+<section class="footer__music">
 <?php  get_sidebar( 'footer_ligne_2' );
 ?>
 

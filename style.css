@@ -527,7 +527,7 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #759694;
+  background-color: #7eadaa;
   color: #3f3d3d;
   padding-left: 40px;
   box-shadow: #96c7e4 1px -1px 10px;
@@ -712,7 +712,6 @@ svg:hover {
   display: flex;
   align-items: center;
   height: 50px;
-  width: 200px;
   border: none;
 }
 
@@ -765,8 +764,9 @@ svg:hover {
 .site__footer__ligne {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  font-size: 1rem;
 }
 
 div.animation__bloc:hover {
@@ -850,7 +850,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__header {
   grid-area: header;
-  background-color: rgba(117, 150, 148, 0.8);
+  background-color: rgba(126, 173, 170, 0.8);
 }
 
 .site__barre {

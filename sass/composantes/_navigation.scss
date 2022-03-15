@@ -39,19 +39,11 @@
    
     
     
-    //a{
-       // display : block;
-        //text-decoration: none;
-        //padding : 4px;
-        //background-color: $color__background-link;
-        //&:hover {
-            //background-color: $color__background-link-hover;
-       // }
-    //}
+   
     a{
         text-decoration: none;
         display:flex;
-        //flex-direction: column;
+        
         justify-content: center;
      border: solid 1px white;
         height: 50px;
@@ -63,13 +55,9 @@
         font-size: 1.2rem;
        
     }
-    //a{
-      //  color: rgb(240, 171, 82);
-     
-       // font-family: $font__main;
-    ////}
+    
     a:hover{//
-        //background-color: transparent; 
+        
         background-color: rgb(41, 40, 40);
        color:  hsl(231, 75%, 70%);
        box-shadow: rgb(177, 150, 228) 1px -1px 10px;
