@@ -56,6 +56,10 @@
 .footer__author {
   color:  aqua;;
   text-align: center;
+}.footer__copyright{
+  color:  aqua;;
+  text-align: center;
+
 }
 .site__footer svg{
   color: aliceblue;
@@ -66,5 +70,17 @@
  
  
 }
+.site__footer__colonne{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.site__footer__ligne{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 
 

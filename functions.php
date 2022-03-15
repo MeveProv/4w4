@@ -36,6 +36,8 @@ add_theme_support( 'custom-logo', array(
     'height' => 200,
     'width'  => 200,
 ) );
+/*pour personnaliser le logo  */
+/*add_action('after_setup_theme',' cidw_4w4_add_theme_support');*/  
 /* ------ENREGISTREMENT DES SIDEBARS-------*/
 add_action( 'widgets_init', 'my_register_sidebars' );
 function my_register_sidebars() {

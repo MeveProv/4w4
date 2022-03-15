@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-theme name: lab4 gr2 marie
-author : Marie-Eve Provost
-author URI: https://github.com/MeveProv/4w4.git
+theme name: TP1 gr2 Marie-Eve Provost
+Author: Marie-Eve Provost
+Author URI: https://github.com/MeveProv/4w4.git
 
 */
 /* ---------------------------------------------------------
@@ -422,7 +422,7 @@ a {
 
 .site__footer .menu-item a:visited {
   color: #74744e;
-  background-color: #d28de7;
+  background-color: #f0bb6a;
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
@@ -443,9 +443,19 @@ COMPOSANTES
 --------------------------------------------------------- */
 .principal {
   margin: 20px;
-  padding: 10px 15px;
   background-color: #343232;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .principal {
+    flex-direction: column;
+    padding: 10px 15px;
+    align-items: flex-start;
+  }
 }
 
 .formation {
@@ -506,7 +516,7 @@ COMPOSANTES
 }
 
 .site__main p {
-  color: #e2e2e2;
+  color: #f0efd0;
   font-size: 1.2rem;
   padding-left: 20px;
 }
@@ -733,12 +743,30 @@ svg:hover {
   text-align: center;
 }
 
+.footer__copyright {
+  color: aqua;
+  text-align: center;
+}
+
 .site__footer svg {
   color: aliceblue;
 }
 
 .iconeFooter {
   text-align: center;
+}
+
+.site__footer__colonne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.site__footer__ligne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 div.animation__bloc:hover {
