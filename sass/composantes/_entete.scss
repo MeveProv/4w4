@@ -1,6 +1,27 @@
+.wp-image-217{
+  opacity: 0.5;
+  animation: anim_image 5s forwards ease-in-out;
+  //animation-iteration-count: infinite;
+  //padding-top: 70px;
+  //display: flex;
+}
+h3{
+  color: rgb(247, 248, 248);
+  font-size: 3rem;
+  z-index: 3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  text-shadow: 1px 1px 20px  rgb(219, 218, 218);
+  letter-spacing: 0.2rem;
+}
+
+
+
 div.animation__bloc:hover {
   background-color: transparent;
   border: 1px solid white;
+  color: azure;
 
 }
 div.animation__bloc:nth-of-type(1){
@@ -44,10 +65,10 @@ div.animation__bloc:nth-of-type(5){
     height: 100px;
     border-radius: 50%;
     background-color: black;
-
+    z-index: 2;
     color: rgb(223, 111, 111);
     //animation: anim_bloc 1s 1s forwards ease-in-out;
-
+    box-shadow: 1px 1px 20px 5px rgb(219, 218, 218);
   }
 
 
@@ -65,6 +86,22 @@ div.animation__bloc:nth-of-type(5){
 
     100% {
       transform: translateY(10px) rotate(360deg)
+    }
+
+  }
+  @keyframes anim_image {
+    0% {
+     opacity: 0.1;
+    }
+
+    50% {
+      opacity: 0.5;
+
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1.25);
     }
 
   }
