@@ -1,7 +1,7 @@
 /* ---------------- BACKGROUND */
 $color__background-body : hsl(0, 2%, 20%);
 $color__background-main : hsl(0, 2%, 20%);
-$color__background-cours : hsl(50, 11%, 89%);
+$color__background-cours : hsl(30, 3%, 86%);
 $color__background-header : rgb(126, 173, 170);
 $color__background-barre : hsl(59, 100%, 76%);
 $color__background-footer : hsl(0, 2%, 11%);
@@ -20,7 +20,7 @@ $color__link__footer-visited : hsl(231, 75%, 70%);
 
 /* ---------------- LIENS HEADER */
 $color__link__header : hsl(59, 65%, 73%);
-$color__link__header-hover : hsl(229, 40%, 92%);
+//$color__link__header-hover : hsl(229, 40%, 92%);
 $color__link__header-visited : hsl(167, 70%, 65%);
 
 
@@ -36,7 +36,8 @@ $color__link__footer__menu: hsl(58, 52%, 88%);
 $color__link__footer__menu-visited:hsl(60, 20%, 38%);
 $color__link__footer__menu-hover:hsl(41, 76%, 92%);
 $background__link__footer__menu:hsl(101, 65%, 73%);
-$background__link__footer__menu-visited:hsl(36, 82%, 68%);
+$background__link__footer__menu-visited:hsl(22, 82%, 68%);
+
 $background__link__footer__menu-hover:#df6f6f;
 
 

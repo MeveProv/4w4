@@ -31,16 +31,18 @@
           
           
             }
+            
              
               border: none;
               &:hover{
                 //color: aliceblue;
-                box-shadow: rgba(177, 150, 228, 0) 1px -1px 10px;
+                box-shadow: rgb(177, 150, 228) 0px -1px 10px;
               } 
               
               svg { // .site__footer__menu__ul .menu-item a svg
                 color: rgb(44, 204, 204);
                 padding-right: 5px;
+                box-shadow: rgba(177, 150, 228, 0) 0px -1px 10px;
               }
               
             }
@@ -76,3 +78,9 @@
   font-size: 1rem;
   
 }
+.footer__recherche{
+  padding-left: 40px;
+}
+
+
+

@@ -350,26 +350,6 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 /*mixin footer*/
-a {
-  color: #cadd73;
-}
-
-a:visited {
-  color: #819966;
-}
-
-a:hover, a:focus, a:active {
-  color: white;
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-a:hover, a:active {
-  outline: 0;
-}
-
 .site__footer a {
   color: #f85454;
 }
@@ -390,52 +370,13 @@ a:hover, a:active {
   outline: 0;
 }
 
-.site__header a {
-  color: #e7e58d;
-}
-
-.site__header a:visited {
-  color: #67e4c9;
-}
-
-.site__header a:hover, .site__header a:focus, .site__header a:active {
-  color: #e2e5f3;
-}
-
-.site__header a:focus {
-  outline: thin dotted;
-}
-
-.site__header a:hover, .site__header a:active {
-  outline: 0;
-}
-
 a {
-  color: #819966;
+  color: #515c96;
   text-decoration: none;
 }
 
-.site__footer .menu-item a {
-  color: #f0efd0;
-  background-color: #aae78d;
-}
-
-.site__footer .menu-item a:visited {
-  color: #74744e;
-  background-color: #f0bb6a;
-}
-
-.site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: #faf0db;
-  background-color: #df6f6f;
-}
-
-.site__footer .menu-item a:focus {
-  outline: thin dotted;
-}
-
-.site__footer .menu-item a:hover, .site__footer .menu-item a:active {
-  outline: 0;
+a:hover {
+  color: #fdfdfd;
 }
 
 /* ---------------------------------------------------------
@@ -454,7 +395,6 @@ COMPOSANTES
   .principal {
     flex-direction: column;
     padding: 10px 15px;
-    align-items: flex-start;
   }
 }
 
@@ -476,7 +416,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #e6e5e0;
+  background-color: #dcdbda;
   box-shadow: #b196e4 1px -1px 10px;
   border: solid 3px #798aec;
   margin: 10px;
@@ -484,6 +424,14 @@ COMPOSANTES
   flex-direction: column;
   width: 100%;
   padding: 10px;
+}
+
+.formation__cours:hover {
+  background-color: white;
+  transform: scale(1.2);
+  box-shadow: #798aec 3px -1px 20px;
+  background-color: #242323;
+  border: solid 3px #e7e7e9;
 }
 
 @media screen and (min-width: 800px) {
@@ -624,6 +572,15 @@ svg:hover {
   }
 }
 
+.site__header a {
+  color: aliceblue;
+}
+
+.site__header a:hover {
+  color: #212222;
+  text-shadow: 2px 2px 2px white;
+}
+
 #burger {
   position: absolute;
   transition: transform .3s;
@@ -723,12 +680,13 @@ svg:hover {
 }
 
 .site__footer__menu__ul .menu-item a:hover {
-  box-shadow: rgba(177, 150, 228, 0) 1px -1px 10px;
+  box-shadow: #b196e4 0px -1px 10px;
 }
 
 .site__footer__menu__ul .menu-item a svg {
   color: #2ccccc;
   padding-right: 5px;
+  box-shadow: rgba(177, 150, 228, 0) 0px -1px 10px;
 }
 
 .footer__titre {
@@ -747,14 +705,6 @@ svg:hover {
   text-align: center;
 }
 
-.site__footer svg {
-  color: aliceblue;
-}
-
-.iconeFooter {
-  text-align: center;
-}
-
 .site__footer__colonne {
   display: flex;
   flex-direction: row;
@@ -767,6 +717,10 @@ svg:hover {
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
+}
+
+.footer__recherche {
+  padding-left: 40px;
 }
 
 div.animation__bloc:hover {
@@ -827,7 +781,7 @@ div.animation__bloc:hover {
 LAYOUT
 --------------------------------------------------------- */
 /*
-theme name: Lab 2 Lemieux Florence
+
 */
 .site {
   background-color: rgba(52, 50, 50, 0.9);

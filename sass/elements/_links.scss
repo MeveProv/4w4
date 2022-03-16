@@ -58,11 +58,11 @@
 }
 
 // premier mixin//////////////
-a {
-	@include links($color__link,
-		$color__link-visited,
-		$color__link-hover)
-}
+//a {
+	//@include links($color__link,
+	//	$color__link-visited,
+	//	$color__link-hover)
+//}
 
 .site__footer a {
 	@include links($color__link__footer,
@@ -70,30 +70,33 @@ a {
 		$color__link__footer-hover);
 }
 
-.site__header a {
+//.site__header a {
 
-	@include links($color__link__header,
-		$color__link__header-visited,
-		$color__link__header-hover)
-}
+	//@include links($color__link__header,
+	//	$color__link__header-visited,
+	//	$color__link__header-hover)
+//}
 
 a {
-	color: rgb(129, 153, 102);
+	color: #515c96;;
 	text-decoration: none;
+}
+a:hover{
+	color: rgb(253, 253, 253);
 }
 
 
 
 
 // Nouveau mixin//////////////
-.site__footer .menu-item a{
-	@include links__menu($color__link__footer__menu,
-	                     $color__link__footer__menu-visited,
-	                     $color__link__footer__menu-hover,
-						 $background__link__footer__menu,
-		                 $background__link__footer__menu-visited,
-		                 $background__link__footer__menu-hover);
-}
+//.site__footer .menu-item a{
+	//@include links__menu($color__link__footer__menu,
+	//                     $color__link__footer__menu-visited,
+	  //                   $color__link__footer__menu-hover,
+	//					 $background__link__footer__menu,
+	//	                 $background__link__footer__menu-visited,
+	//	                 $background__link__footer__menu-hover);
+//}
 //.menu-principal .menu-item a{
 	//@include links__menu($color__link__menu__principal,
 	                     //$color__link__menu__principal-visited,
