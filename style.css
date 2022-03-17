@@ -427,16 +427,17 @@ COMPOSANTES
   padding: 10px;
 }
 
-.formation__cours:hover {
-  background-color: white;
-  transform: scale(1.2);
-  box-shadow: #f4f4f6 3px 1px 20px;
-  background-color: #242323;
-  border: solid 3px #e7e7e9;
-}
-
-.formation__cours:hover .cours__desc {
-  color: #fafafa;
+@media screen and (min-width: 800px) {
+  .formation__cours:hover {
+    background-color: white;
+    transform: scale(1.2);
+    box-shadow: #f4f4f6 3px 1px 20px;
+    background-color: #242323;
+    border: solid 3px #e7e7e9;
+  }
+  .formation__cours:hover .cours__desc {
+    color: #fafafa;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -478,6 +479,16 @@ COMPOSANTES
   padding-left: 20px;
 }
 
+img {
+  border: 2px solid white;
+  padding: 5px;
+}
+
+.sidebar-entete_1 {
+  display: flex;
+  flex-direction: row;
+}
+
 .site__header {
   background-color: #7eadaa;
   color: #3f3d3d;
@@ -493,7 +504,7 @@ COMPOSANTES
 }
 
 .site__header .header__description {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw, 3rem);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-left: 40px;
 }
@@ -713,6 +724,7 @@ svg:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 20px;
 }
 
 .site__footer__ligne {
@@ -727,14 +739,44 @@ svg:hover {
   padding-left: 40px;
 }
 
-.wp-image-217 {
-  opacity: 0.5;
-  animation: anim_image 5s forwards ease-in-out;
+.wp-embed-aspect-4-3 {
+  padding: 10px;
+  border: 1px solid white;
+  background-color: #7b7c7e;
 }
 
-h3 {
+img {
+  border: 2px solid white;
+}
+
+.blocks-gallery-grid {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .blocks-gallery-grid {
+    width: 50%;
+    padding-top: 20px;
+    opacity: 0.8;
+    display: block;
+    display: flex;
+  }
+}
+
+.wp-image-217 {
+  opacity: 1;
+}
+
+@media screen and (min-width: 800px) {
+  .wp-image-217 {
+    opacity: 0.5;
+    animation: anim_image 5s forwards ease-in-out;
+  }
+}
+
+h4 {
   color: #f7f8f8;
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 3vw, 4rem);
   z-index: 3;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -783,13 +825,20 @@ div.animation__bloc:nth-of-type(5) {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: black;
   z-index: 2;
   color: #df6f6f;
   box-shadow: 1px 1px 20px 5px #dbdada;
+}
+
+@media screen and (min-width: 800px) {
+  .animation__bloc {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @keyframes anim_bloc {

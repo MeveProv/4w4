@@ -1,3 +1,22 @@
+.blocks-gallery-grid{
+  display: none;
+}
+@media screen and (min-width : $largeur__media--tablette) {
+  
+.blocks-gallery-grid{
+  width: 50%;
+  padding-top: 20px;
+ opacity: 0.8;
+ display: block;
+ display: flex;
+ 
+}
+}
+.wp-image-217{
+  opacity: 1;
+  
+}
+@media screen and (min-width : $largeur__media--tablette) {
 .wp-image-217{
   opacity: 0.5;
   animation: anim_image 5s forwards ease-in-out;
@@ -5,9 +24,11 @@
   //padding-top: 70px;
   //display: flex;
 }
-h3{
+}
+h4{
   color: rgb(247, 248, 248);
-  font-size: 3rem;
+  //font-size: 3rem;
+  font-size: clamp(1.5rem ,3vw, 4rem);
   z-index: 3;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -61,14 +82,18 @@ div.animation__bloc:nth-of-type(5){
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-color: black;
     z-index: 2;
     color: rgb(223, 111, 111);
     //animation: anim_bloc 1s 1s forwards ease-in-out;
     box-shadow: 1px 1px 20px 5px rgb(219, 218, 218);
+    @media screen and (min-width : $largeur__media--tablette) {
+      width: 100px;
+    height: 100px;
+    }
   }
 
 

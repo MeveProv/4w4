@@ -68,6 +68,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 20px;
 }
 .site__footer__ligne{
   display: flex;
@@ -81,6 +82,16 @@
 .footer__recherche{
   padding-left: 40px;
 }
+.wp-embed-aspect-4-3 {
 
+ 
+ padding: 10px;
+ border: 1px solid white;
+background-color: rgb(123, 124, 126);
+
+}
+img{
+  border: 2px solid white;
+}
 
 

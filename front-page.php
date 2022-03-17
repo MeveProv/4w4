@@ -9,7 +9,7 @@
         <div class="animation__bloc">Sons</div>
         <div class="animation__bloc">Photoshop</div>
     </section>
-    <h3>Portefolio de Marie-Eve</h3>
+    <h4>Portefolio de Marie-Eve</h4>
    
             <?php if (have_posts()):the_post();?>
               <?php
