@@ -745,10 +745,6 @@ svg:hover {
   background-color: #7b7c7e;
 }
 
-img {
-  border: 2px solid white;
-}
-
 .blocks-gallery-grid {
   display: none;
 }
@@ -756,7 +752,7 @@ img {
 @media screen and (min-width: 800px) {
   .blocks-gallery-grid {
     width: 50%;
-    padding-top: 20px;
+    padding-top: 40px;
     opacity: 0.8;
     display: block;
     display: flex;
@@ -765,6 +761,10 @@ img {
 
 .wp-image-217 {
   opacity: 1;
+}
+
+.sidebar-entete_1 {
+  padding: 15px;
 }
 
 @media screen and (min-width: 800px) {
