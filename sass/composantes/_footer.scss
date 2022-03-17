@@ -36,11 +36,11 @@
               border: none;
               &:hover{
                 //color: aliceblue;
-                box-shadow: rgb(177, 150, 228) 0px -1px 10px;
+                box-shadow: rgb(177, 149, 228) 0px -1px 10px;
               } 
               
               svg { // .site__footer__menu__ul .menu-item a svg
-                color: rgb(44, 204, 204);
+               
                 padding-right: 5px;
                 box-shadow: rgba(177, 150, 228, 0) 0px -1px 10px;
               }
@@ -59,7 +59,7 @@
   color:  aqua;;
   text-align: center;
 }.footer__copyright{
-  color:  aqua;;
+  color:  rgb(8, 252, 252);;
   text-align: center;
 
 }
@@ -87,7 +87,7 @@
  
  padding: 10px;
  border: 1px solid white;
-background-color: rgb(123, 124, 126);
+
 
 }
 

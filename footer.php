@@ -25,7 +25,7 @@
 <p>Tout droits réservé - TIM - Collège de Maisonneuve</p>
 </section>
 <section class="footer__author">
-<p>Site de Marie-Eve Provost</p>
+<p>Site de Marie-Ève Provost</p>
 </section>
 <section class="footer__menu">
 <?php
