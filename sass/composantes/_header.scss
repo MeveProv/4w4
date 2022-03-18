@@ -27,8 +27,11 @@ padding-left: 10px;
 }
 
 svg {
+  display: flex;
   color: $color__background-footer;
-
+ //margin-right: 20px;
+ margin-right: 5px;
+  transform: rotateZ(180deg);
 
 
 
