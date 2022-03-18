@@ -21,13 +21,19 @@
 .sidebar-entete_1{
   padding: 15px;
 }
+img{
+  border: 2px solid white;
+  padding: 5px;
+}
+.sidebar-entete_1{
+  display: flex;
+  flex-direction: row;
+}
 @media screen and (min-width : $largeur__media--tablette) {
 .wp-block-cover__image-background{
   opacity: 0.8;
   animation: anim_image 5s forwards ease-in-out;
-  //animation-iteration-count: infinite;
-  //padding-top: 70px;
-  //display: flex;
+  
 }
 }
 h4{
