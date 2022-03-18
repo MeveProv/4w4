@@ -470,7 +470,7 @@ COMPOSANTES
 
 .site__main p {
   color: #f4f4f5;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   padding: 20px;
 }
 
@@ -640,12 +640,13 @@ svg:hover {
   color: aqua;
   background-color: #4e4e4e;
   font-size: 1.2rem;
+  box-shadow: #222222 1px -1px 10px 3px;
 }
 
 .menu-item a:hover {
   background-color: #292828;
   color: #798aec;
-  box-shadow: #b196e4 1px -1px 10px;
+  box-shadow: #b196e4 1px -1px 10px 2px;
 }
 
 @media screen and (min-width: 800px) {
@@ -794,12 +795,14 @@ img {
 
 h4 {
   color: #f7f8f8;
-  font-size: clamp(1.5rem, 3vw, 4rem);
+  font-size: clamp(1rem, 3vw, 3rem);
   z-index: 3;
   padding-top: 50px;
   padding-bottom: 50px;
   text-shadow: 1px 1px 20px #dbdada;
   letter-spacing: 0.2rem;
+  animation: anim_titre 2s forwards ease-in-out;
+  animation-delay: 6s;
 }
 
 div.animation__bloc:hover {
@@ -877,6 +880,20 @@ div.animation__bloc:nth-of-type(5) {
   }
   50% {
     opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+}
+
+@keyframes anim_titre {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(100px);
   }
   100% {
     opacity: 1;
