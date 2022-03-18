@@ -1,6 +1,6 @@
 <?php
 /**
- * L'entête « header » de chacune des pages de notre site
+ * L'entête header de chacune des pages de notre site
  */
 ?>
 <!DOCTYPE html>
