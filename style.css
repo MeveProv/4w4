@@ -13,13 +13,6 @@ VARIABLES
 /* ---------------- LIENS HEADER */
 /* ---------------- FONT header */
 /* ---------------- Menu FOOTER */
-/* ---------------- Menu principal */
-/*$color__link__menu__principal:hsl(46, 65%, 73%);
-$color__link__menu__principal-visited:hsl(46, 65%, 73%);
-$color__link__menu__principal-hover:hsl(46, 65%, 73%);
-$background__link__menu__principal:hsl(46, 65%, 73%);
-$background__link__menu__principal-visited:hsl(46, 65%, 73%);
-$background__link__menu__principal-hover:hsl(46, 65%, 73%);*/
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -369,15 +362,6 @@ html {
   outline: 0;
 }
 
-a {
-  color: #515c96;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #fdfdfd;
-}
-
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -476,6 +460,15 @@ COMPOSANTES
 
 .site__main h1 {
   padding-left: 20px;
+}
+
+a {
+  color: #515c96;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fdfdfd;
 }
 
 .site__header {
