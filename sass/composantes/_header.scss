@@ -9,34 +9,33 @@
   .header__titre {
     font-size: 3em;
     font-family: $font__titre;
-padding-left: 10px;
+    padding-left: 10px;
 
   }
 
   .header__description {
-    //font-size: 1.5rem;
-    font-size: clamp(1rem ,2vw, 3rem);
+
+    font-size: clamp(1rem, 2vw, 3rem);
     font-family: $font__main;
     padding-left: 40px;
 
   }
 }
 
-.icone__lien {
-
-}
+.icone__lien {}
 
 svg {
   display: flex;
   color: $color__background-footer;
- //margin-right: 20px;
- 
- 
+
+
+
 
 
 
 }
-.iconeMenu{
+
+.iconeMenu {
   transform: rotateZ(180deg);
   margin-right: 5px;
 }
@@ -51,7 +50,6 @@ svg:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   align-items: center;
 
   @media screen and (min-width : $largeur__media--tablette) {
@@ -91,7 +89,7 @@ svg:hover {
   width: 100%;
 
   @media screen and (min-width : $largeur__media--tablette) {
-    //width: 10%;
+
     align-items: center;
   }
 
@@ -130,10 +128,12 @@ svg:hover {
   }
 
 }
-.site__header a{
+
+.site__header a {
   color: aliceblue;
 }
-.site__header a:hover{
+
+.site__header a:hover {
   color: rgb(33, 34, 34);
   text-shadow: 2px 2px 2px white;
 }

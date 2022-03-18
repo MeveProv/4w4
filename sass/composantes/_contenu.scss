@@ -1,31 +1,23 @@
 .principal {
     margin: 20px;
-   
+
     background-color: $color__background-main;
     border-radius: 5px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   
-  
-  
-   @media screen and (min-width : $largeur__media--tablette) {
+    display: flex;
     flex-direction: column;
-    padding: 10px 15px;
-   
+    align-items: center;
 
+@media screen and (min-width : $largeur__media--tablette) {
+        flex-direction: column;
+        padding: 10px 15px;
 
-
-
-  }
-
-   
+ }
 }
 
 .formation {
     display: flex;
     flex-direction: column;
-   
+
 
     &__titre {
         font-size: 2rem;
@@ -33,51 +25,49 @@
         margin: 10px 0px;
         font-family: $font__titre;
     }
+
     &__liste {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     &__cours {
         background-color: $color__background-cours;
         box-shadow: rgb(177, 150, 228) 1px -1px 10px;
         border: solid 3px hsl(231, 75%, 70%);
-       transition: 0.5s;
-       
+        transition: 0.5s;
+
         margin: 10px;
         display: flex;
         flex-direction: column;
         width: 100%;
+
         @media screen and (min-width : $largeur__media--tablette) {
-        &:hover{
-            background-color: rgb(255, 255, 255);
-           transform: scale(1.2);
-            box-shadow: hsl(240, 9%, 96%) 3px 1px 20px;
-            background-color: rgb(36, 35, 35);
-            border: solid 3px hsl(240, 6%, 91%);
-            .cours__desc{
-                color: rgb(250, 250, 250);
-                       }
-               
-                    }
-       }
-       
-        @media screen and (min-width : $largeur__media--tablette){
+            &:hover {
+                background-color: rgb(255, 255, 255);
+                transform: scale(1.2);
+                box-shadow: hsl(240, 9%, 96%) 3px 1px 20px;
+                background-color: rgb(36, 35, 35);
+                border: solid 3px hsl(240, 6%, 91%);
+
+                .cours__desc {
+                    color: rgb(250, 250, 250);
+                }
+
+            }
+        }
+
+        @media screen and (min-width : $largeur__media--tablette) {
             width: 45%;
         }
-        @media screen and (min-width : $largeur__media--desktop){
+
+        @media screen and (min-width : $largeur__media--desktop) {
             width: 30%;
         }
+
         padding: 10px;
     }
-    
-
-
 }
-
-
-
-
 
 .cours__titre {
     font-size: 1.7rem;
@@ -95,14 +85,16 @@
 .cours__description {
     font-size: 1rem;
 }
-.site__main p{
+
+.site__main p {
     color: #f4f4f5;
-    font-size: clamp(1rem ,2vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     padding: 20px;
-   
-    
+
+
 }
-.site__main h1{
-   
+
+.site__main h1 {
+
     padding-left: 20px;
 }

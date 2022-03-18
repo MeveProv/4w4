@@ -1,51 +1,53 @@
-.blocks-gallery-grid{
+.blocks-gallery-grid {
   display: none;
 }
+
 @media screen and (min-width : $largeur__media--tablette) {
-  
-.blocks-gallery-grid{
-  width: 50%;
-  padding-top: 40px;
- opacity: 0.8;
- display: block;
- display: flex;
- 
-}
-}
 
+  .blocks-gallery-grid {
+    width: 50%;
+    padding-top: 40px;
+    opacity: 0.8;
+    display: block;
+    display: flex;
 
-.wp-image-217{
+  }
+}
+.wp-image-217 {
   opacity: 1;
-  
+
 }
-.sidebar-entete_1{
+
+.sidebar-entete_1 {
   padding: 15px;
 }
-img{
+
+img {
   border: 2px solid white;
   padding: 5px;
- 
+
 }
-.sidebar-entete_1{
+
+.sidebar-entete_1 {
   display: flex;
   flex-direction: row;
 }
+
 @media screen and (min-width : $largeur__media--tablette) {
-.wp-block-cover__image-background{
-  opacity: 0.8;
-  animation: anim_image 5s forwards ease-in-out;
-  
+  .wp-block-cover__image-background {
+    opacity: 0.8;
+    animation: anim_image 5s forwards ease-in-out;
+
+  }
 }
-}
-h4{
+
+h4 {
   color: rgb(247, 248, 248);
-  //font-size: 3rem;
-  font-size: clamp(1rem ,3vw, 3rem);
+  font-size: clamp(1rem, 3vw, 3rem);
   z-index: 3;
   padding-top: 50px;
   padding-bottom: 50px;
-  
-  text-shadow: 1px 1px 20px  rgb(219, 218, 218);
+  text-shadow: 1px 1px 20px rgb(219, 218, 218);
   letter-spacing: 0.2rem;
   animation: anim_titre 2s forwards ease-in-out;
   animation-delay: 6s;
@@ -59,28 +61,33 @@ div.animation__bloc:hover {
   color: azure;
 
 }
-div.animation__bloc:nth-of-type(1){
-  
+
+div.animation__bloc:nth-of-type(1) {
+
   animation: anim_bloc 1s 1s forwards ease-in-out;
   animation-delay: 1s;
 }
-div.animation__bloc:nth-of-type(2){
-  
+
+div.animation__bloc:nth-of-type(2) {
+
   animation: anim_bloc 1s 1s forwards ease-in-out;
   animation-delay: 2s;
 }
-div.animation__bloc:nth-of-type(3){
-  
+
+div.animation__bloc:nth-of-type(3) {
+
   animation: anim_bloc 1s 1s forwards ease-in-out;
   animation-delay: 3s;
 }
-div.animation__bloc:nth-of-type(4){
-  
+
+div.animation__bloc:nth-of-type(4) {
+
   animation: anim_bloc 1s 1s forwards ease-in-out;
   animation-delay: 4s;
 }
-div.animation__bloc:nth-of-type(5){
-  
+
+div.animation__bloc:nth-of-type(5) {
+
   animation: anim_bloc 1s 1s forwards ease-in-out;
   animation-delay: 5s;
 }
@@ -88,7 +95,6 @@ div.animation__bloc:nth-of-type(5){
 .animation {
   display: flex;
   width: 90%;
-  //border: 1px solid white;
   justify-content: space-around;
 
 
@@ -102,11 +108,11 @@ div.animation__bloc:nth-of-type(5){
     background-color: black;
     z-index: 2;
     color: rgb(223, 111, 111);
-    //animation: anim_bloc 1s 1s forwards ease-in-out;
     box-shadow: 1px 1px 20px 5px rgb(219, 218, 218);
+
     @media screen and (min-width : $largeur__media--tablette) {
       width: 100px;
-    height: 100px;
+      height: 100px;
     }
   }
 
@@ -128,9 +134,10 @@ div.animation__bloc:nth-of-type(5){
     }
 
   }
+
   @keyframes anim_image {
     0% {
-     opacity: 0.1;
+      opacity: 0.1;
     }
 
     50% {
@@ -144,9 +151,10 @@ div.animation__bloc:nth-of-type(5){
     }
 
   }
+
   @keyframes anim_titre {
     0% {
-     opacity: 0.1;
+      opacity: 0.1;
 
     }
 
