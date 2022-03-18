@@ -9,7 +9,6 @@ Author URI: https://github.com/MeveProv/4w4.git
 VARIABLES
 --------------------------------------------------------- */
 /* ---------------- BACKGROUND */
-/* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS HEADER */
 /* ---------------- FONT header */
@@ -695,11 +694,10 @@ svg:hover {
 }
 
 .site__footer__menu__ul .menu-item a:hover {
-  box-shadow: #b196e4 0px -1px 10px;
+  box-shadow: #b195e4 0px -1px 10px;
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: #2ccccc;
   padding-right: 5px;
   box-shadow: rgba(177, 150, 228, 0) 0px -1px 10px;
 }
@@ -716,7 +714,7 @@ svg:hover {
 }
 
 .footer__copyright {
-  color: aqua;
+  color: #08fcfc;
   text-align: center;
 }
 
@@ -742,7 +740,6 @@ svg:hover {
 .wp-embed-aspect-4-3 {
   padding: 10px;
   border: 1px solid white;
-  background-color: #7b7c7e;
 }
 
 .blocks-gallery-grid {
@@ -768,8 +765,8 @@ svg:hover {
 }
 
 @media screen and (min-width: 800px) {
-  .wp-image-217 {
-    opacity: 0.5;
+  .wp-block-cover__image-background {
+    opacity: 0.8;
     animation: anim_image 5s forwards ease-in-out;
   }
 }

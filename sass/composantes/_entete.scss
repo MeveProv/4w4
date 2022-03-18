@@ -12,6 +12,8 @@
  
 }
 }
+
+
 .wp-image-217{
   opacity: 1;
   
@@ -20,8 +22,8 @@
   padding: 15px;
 }
 @media screen and (min-width : $largeur__media--tablette) {
-.wp-image-217{
-  opacity: 0.5;
+.wp-block-cover__image-background{
+  opacity: 0.8;
   animation: anim_image 5s forwards ease-in-out;
   //animation-iteration-count: infinite;
   //padding-top: 70px;
