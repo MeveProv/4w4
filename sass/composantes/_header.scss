@@ -30,11 +30,15 @@ svg {
   display: flex;
   color: $color__background-footer;
  //margin-right: 20px;
- margin-right: 5px;
+ 
+ 
+
+
+
+}
+.iconeMenu{
   transform: rotateZ(180deg);
-
-
-
+  margin-right: 5px;
 }
 
 svg:hover {

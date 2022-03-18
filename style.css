@@ -469,9 +469,9 @@ COMPOSANTES
 }
 
 .site__main p {
-  color: #798aec;
-  font-size: 1.2rem;
-  padding-left: 20px;
+  color: #f4f4f5;
+  font-size: clamp(1rem, 2vw, 2rem);
+  padding: 20px;
 }
 
 .site__main h1 {
@@ -501,8 +501,11 @@ COMPOSANTES
 svg {
   display: flex;
   color: #1d1b1b;
-  margin-right: 5px;
+}
+
+.iconeMenu {
   transform: rotateZ(180deg);
+  margin-right: 5px;
 }
 
 svg:hover {
