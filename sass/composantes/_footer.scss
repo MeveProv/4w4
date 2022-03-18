@@ -40,7 +40,7 @@
               } 
               
               svg { // .site__footer__menu__ul .menu-item a svg
-               
+                transform: rotateZ(0deg);
                 padding-right: 5px;
                 box-shadow: rgba(177, 150, 228, 0) 0px -1px 10px;
               }
