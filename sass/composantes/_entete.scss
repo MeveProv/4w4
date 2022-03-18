@@ -1,7 +1,8 @@
+///// section pour Animations //////
 .blocks-gallery-grid {
   display: none;
 }
-
+/////  Animations réservé pour format tablette//////
 @media screen and (min-width : $largeur__media--tablette) {
 
   .blocks-gallery-grid {
@@ -13,6 +14,7 @@
 
   }
 }
+/////contenu de la front page//////
 .wp-image-217 {
   opacity: 1;
 
@@ -53,7 +55,7 @@ h4 {
   animation-delay: 6s;
 }
 
-
+/////section pour les animations avec les div//////
 
 div.animation__bloc:hover {
   background-color: transparent;
@@ -115,7 +117,7 @@ div.animation__bloc:nth-of-type(5) {
       height: 100px;
     }
   }
-
+/////Animation//////
 
   &__bloc {}
 

@@ -1,3 +1,4 @@
+/////Section footer//////
 .site__footer {
   font-family: $font__titre;
   background-color: $color__background-footer;
@@ -23,7 +24,7 @@
           align-items: center;
           height: 50px;
 
-          
+          /////Ajustement format tablette//////
           @media screen and (min-width : $largeur__media--tablette) {
             height: 30px;
             width: 130px;
@@ -54,7 +55,7 @@
     }
   }
 }
-
+/////Section footer pour texte//////
 .footer__titre {
   color: hsl(231, 75%, 70%);
   text-align: center;
@@ -73,7 +74,7 @@
   text-align: center;
 
 }
-
+/////Les divisions footer//////
 .site__footer__colonne {
   display: flex;
   flex-direction: row;
@@ -90,7 +91,7 @@
   font-size: 1rem;
 
 }
-
+/////zone recherche reservé footer //////
 .footer__recherche {
   padding-left: 40px;
 }

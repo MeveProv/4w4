@@ -1,3 +1,4 @@
+/////section pour le header//////
 .site__header {
   background-color: $color__background-header;
   color: $color__font-header;
@@ -51,7 +52,7 @@ svg:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
+/////Ajustement pour format tablette//////
   @media screen and (min-width : $largeur__media--tablette) {
     flex-direction: row;
 
@@ -80,7 +81,7 @@ svg:hover {
   }
 
 }
-
+/////section utile dans le header//////
 .utile {
   display: flex;
   flex-direction: row;
@@ -97,7 +98,7 @@ svg:hover {
 }
 
 
-
+/////Section pour la zone recherche dans le footer//////
 .recherche {
   @media screen and (min-width : $largeur__media--tablette) {
     display: flex;

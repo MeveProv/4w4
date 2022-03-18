@@ -1,4 +1,4 @@
-
+/////Le menu de navigation//////
 #burger {
     position : absolute;
     transition : transform .3s;
@@ -17,13 +17,7 @@
 #chk-burger:checked ~ .menu-principal-container{
     display : block;
 }
-.icone__lien{
-    
-   
- 
-    
-    
-}
+
 
 .menu-principal-container{}
 .menu{
@@ -39,12 +33,6 @@
     padding-top: 35px;
     display: flex;
     flex-direction: column;
-   
-    
-    
-   
-    
-    
    
     a{
         text-decoration: none;
@@ -71,7 +59,7 @@
     }
     
 }
-
+/////Le menu de navigation pour le format tablette//////
 @media screen and (min-width : $largeur__media--tablette){
     #burger {
         display : none;
