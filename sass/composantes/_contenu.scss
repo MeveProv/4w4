@@ -33,6 +33,8 @@
     }
 
     &__cours {
+        background-repeat: no-repeat;
+        background-position: 95% 3%;
         background-color: $color__background-cours;
         box-shadow: rgb(177, 150, 228) 1px -1px 10px;
         border: solid 3px hsl(231, 75%, 70%);
@@ -42,6 +44,10 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+
+
+
+
 ///// section pour les formations du cour version tablette avec hover//////
         @media screen and (min-width : $largeur__media--tablette) {
             &:hover {
@@ -54,6 +60,7 @@
                 .cours__desc {
                     color: rgb(250, 250, 250);
                 }
+                
 
             }
         }
@@ -105,4 +112,21 @@ a {
 }
 a:hover{
 	color: rgb(253, 253, 253);
+}
+
+//icon ans formation
+
+
+.web{
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe');
+   
+}
+.video{
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=videocam');
+}
+.design{
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=pencil');
+}
+.creation-3d{
+    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=cube');
 }

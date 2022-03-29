@@ -1,12 +1,24 @@
 <?php get_header() ?>
 <main class="principal">
-    <h1></h1>
+    <h1>----category.php------</h1>
+    <?php wp_nav_menu(array(
+        "menu" => "categorie_cours",
+        "container" => "nav"
+    )); 
+    ?>
     <section class="formation">
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
         <div class="formation__liste">
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
-                <article class="formation__cours">
+                <?php 
+                      //the_category();
+                     $categories = get_the_category();
+                     //var_dump($categories);
+                     //aller chercher dans le tableau ...le 2e element dans le dump dempo du tablaeu
+                    
+                 ?>
+                <article class="formation__cours <?php echo $categories[1] ->slug; ?> ">
                         <?php
                         $titre = get_the_title();
                         $titreFiltreCours = substr($titre, 7, -6);

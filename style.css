@@ -13,6 +13,7 @@ VARIABLES
 /* ---------------- LIENS HEADER */
 /* ---------------- FONT header */
 /* ---------------- Menu FOOTER */
+/* ---------------- Menu categorie cours */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -362,6 +363,35 @@ html {
   outline: 0;
 }
 
+h1 {
+  font-size: clamp(2rem, 4vw, 5rem);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.3rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+h3, h4 {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 0.2rem;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -399,6 +429,8 @@ COMPOSANTES
 }
 
 .formation__cours {
+  background-repeat: no-repeat;
+  background-position: 95% 3%;
   background-color: #dcdbda;
   box-shadow: #b196e4 1px -1px 10px;
   border: solid 3px #798aec;
@@ -469,6 +501,22 @@ a {
 
 a:hover {
   color: #fdfdfd;
+}
+
+.web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe");
+}
+
+.video {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=videocam");
+}
+
+.design {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=pencil");
+}
+
+.creation-3d {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=cube");
 }
 
 .site__header {
@@ -911,6 +959,28 @@ div.animation__bloc:nth-of-type(5) {
 
 .recherche__bouton {
   top: 0;
+}
+
+.menu-categorie_cours-container .menu {
+  display: flex;
+  list-style-type: none;
+  padding: 15px;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  margin: 0 15px;
+  background-color: #df6853;
+  padding-top: 10px;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: #dedece;
+  padding: 5px;
+  border: none;
+}
+
+.menu-categorie_cours-container .menu:hover a {
+  color: #6fe8f1;
 }
 
 /* ---------------------------------------------------------

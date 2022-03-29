@@ -1,0 +1,28 @@
+.menu-categorie_cours-container{ //nav
+
+
+
+.menu{ //ul
+display: flex;
+list-style-type: none;
+padding: 15px;
+
+    .menu-item{ //  li
+     margin:  0 15px;
+     background-color: $color__bouton__background;
+padding-top: 10px;
+        a{
+         color:    $color__bouton__color;
+padding: 5px;
+border: none;
+        }
+
+    }
+    &:hover{
+
+        a{
+           color: $color__bouton__color--hover; 
+        }
+    }
+}
+}
