@@ -1,9 +1,14 @@
 .menu-categorie_cours-container{ //nav
 
 
-
+   
 .menu{ //ul
 display: flex;
+@media screen and (min-width : $largeur__media--tablette) {
+   flex-direction: row; 
+}
+flex-direction: column;
+
 list-style-type: none;
 padding: 15px;
 
@@ -15,8 +20,9 @@ padding-top: 10px;
          color:    $color__bouton__color;
 padding: 5px;
 border: none;
-        }
 
+        }
+        
     }
     &:hover{
 
@@ -25,4 +31,5 @@ border: none;
         }
     }
 }
+
 }

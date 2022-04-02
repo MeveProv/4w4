@@ -77,9 +77,13 @@
 /////Les divisions footer//////
 .site__footer__colonne {
   display: flex;
-  flex-direction: row;
+  flex-direction:column;
   justify-content: space-around;
   padding: 20px;
+  @media screen and (min-width : $largeur__media--tablette) {
+    flex-direction: row;
+  }
+
 }
 
 .site__footer__ligne {
