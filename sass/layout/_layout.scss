@@ -3,8 +3,8 @@
 */
 /////Le formatage pour le site et le home configuration grid//////
 .site {
-
-    background-color:rgb(0 0 0 / 85%);
+//le truc qui peut bogger!!!!!
+    background-color:rgba(20, 20, 20, 0.85);
     font-family: $font__main;
 }
 
@@ -37,7 +37,7 @@
 
 .site__main {
     grid-area: main;
-    background-color: rgba($color__background-main, .8);
+    background-color: rgba($color__background-main,.8);
 }
 
 .site__footer {
