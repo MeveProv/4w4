@@ -8,18 +8,22 @@ display: flex;
    flex-direction: row; 
 }
 flex-direction: column;
-
+background-color: #82b9bbb4;
+box-shadow: #e6e4e4 1px 1px 20px 3px;
 list-style-type: none;
-padding: 15px;
+padding: 5px;
+margin-bottom: 20px;
+border: solid 1px rgb(244, 248, 248);
 
     .menu-item{ //  li
+        
      margin:  0 15px;
-     background-color: $color__bouton__background;
+     //background-color: $color__bouton__background;
 padding-top: 10px;
         a{
          color:    $color__bouton__color;
 padding: 5px;
-border: none;
+border: 1px solid black;
 
         }
         
@@ -27,9 +31,16 @@ border: none;
     &:hover{
 
         a{
-           color: $color__bouton__color--hover; 
+           color: $color__bouton__color--hover;
+           box-shadow: #222222 1px -1px 10px 3px;
+          // background-image: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-6');
+          
+}
+
+
+            
         }
     }
 }
 
-}
+

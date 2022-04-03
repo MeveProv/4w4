@@ -3,14 +3,18 @@
   background-color: $color__background-header;
   color: $color__font-header;
   padding-left: 40px;
-  box-shadow: rgb(151, 150, 228) 1px -1px 10px;
+  box-shadow: rgb(8, 8, 8) 1px -1px 20px;
   border: 1px solid white;
-
+ 
+  background-image: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-1');
+  background-repeat: no-repeat;
+  background-size: 700px 300px;
 
   .header__titre {
     font-size: 3em;
     font-family: $font__titre;
     padding-left: 10px;
+   
 
   }
 

@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <main class="principal">
-    <h1>----category.php------</h1>
+    <h1></h1>
     <?php wp_nav_menu(array(
         "menu" => "categorie_cours",
         "container" => "nav"

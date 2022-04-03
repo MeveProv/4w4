@@ -4,7 +4,7 @@
 /////Le formatage pour le site et le home configuration grid//////
 .site {
 
-    background-color: rgba($color__background-body, .9);
+    background-color:rgb(0 0 0 / 85%);
     font-family: $font__main;
 }
 
@@ -26,8 +26,7 @@
 
 .site__header {
     grid-area: header;
-    background-color: rgba($color__background-header, .8);
-
+  
 
 }
 

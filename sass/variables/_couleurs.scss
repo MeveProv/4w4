@@ -1,13 +1,19 @@
 /* ---------------- BACKGROUND */
 $color__background-body : hsl(0, 2%, 20%);
-$color__background-main : hsl(0, 2%, 20%);
 
-$color__background-cours : hsl(30, 3%, 86%);
-$color__background-cours : hsl(30, 3%, 86%);
+$color__background-main : hsl(0, 2%, 10%);
 
+
+$color__background-cours : hsla(30, 3%, 86%, 0.253);
+
+
+
+    
 
 $color__background-header : rgb(126, 173, 170);
 $color__background-header : rgb(204, 100, 87);
+$color__background-header : #272727;
+$color__background-header : #bbecee00;
 $color__background-barre : hsl(59, 100%, 76%);
 $color__background-footer : hsl(0, 2%, 11%);
 $color__background-link : hsl(27, 77%, 68%);
@@ -27,7 +33,7 @@ $color__link__header-visited : hsl(167, 70%, 65%);
 
 
 /* ---------------- FONT header */
-$color__font-header : rgb(63, 61, 61);
+$color__font-header : rgb(241, 238, 238);
 $color__font-main :rgb(68, 57, 54);
 $color__font-barre : rgb(255, 255, 255);
 $color__font-footer : rgb(255, 239, 188);
@@ -42,6 +48,6 @@ $background__link__footer__menu-visited:hsl(22, 82%, 68%);
 $background__link__footer__menu-hover:#df6f6f;
 /* ---------------- Menu categorie cours */
 $color__bouton__color: hsl(60, 20%, 84%);
-$color__bouton__background:hsl(9, 69%, 60%);
+$color__bouton__background:#798aec;
 $color__bouton__color--hover:hsl(184, 82%, 69%);
 $color__bouton__background--hover:hsl(9, 48%, 51%);

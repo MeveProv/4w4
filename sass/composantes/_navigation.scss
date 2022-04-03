@@ -25,6 +25,7 @@
     text-align: center;
     margin : 0;
     padding :0;
+
    
 }
 .menu-item{
@@ -33,11 +34,11 @@
     padding-top: 35px;
     display: flex;
     flex-direction: column;
-   
+    
     a{
         text-decoration: none;
         display:flex;
-        
+        text-shadow: 1px 2px 5px black;
         justify-content: center;
      border: solid 1px white;
         height: 50px;
@@ -48,6 +49,8 @@
         background-color: rgb(78, 78, 78);
         font-size: 1.2rem;
         box-shadow: rgb(34, 34, 34) 1px -1px 10px 3px;
+        //background-color: #82b9bbb4;
+        
     }
     
     a:hover{//
@@ -55,7 +58,7 @@
         background-color: rgb(41, 40, 40);
        color:  hsl(231, 75%, 70%);
        box-shadow: rgb(177, 150, 228) 1px -1px 10px 2px;
-       
+       text-shadow: 0.5px 0.5px 5px rgb(240, 237, 237);
     }
     
 }
