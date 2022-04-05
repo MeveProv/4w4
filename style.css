@@ -779,7 +779,6 @@ svg:hover {
   display: flex;
   text-shadow: 1px 2px 5px black;
   justify-content: flex-start;
-  border: solid 1px white;
   height: 50px;
   align-items: center;
   text-align: center;
