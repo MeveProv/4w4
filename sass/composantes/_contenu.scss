@@ -3,13 +3,18 @@
     margin: 40px;
 
    background-color:#5e5c5cd6;
-   background-color:rgba(126, 126, 126, 0.84);;
+   background-color:rgba(126, 126, 126, 0.84);
+   @media screen and (min-width : $largeur__media--tablette) {
     background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=cube');
+   }
     box-shadow: #000000ec 1px 1px 30px 3px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('https://s2.svgbox.net/heropatterns.svg?ic=lips');
+    background-image: url('https://s2.svgbox.net/heropatterns.svg?ic=topography');
+    
     //border: 2px solid white;
 ///// pour format tablette//////
 @media screen and (min-width : $largeur__media--tablette) {
@@ -44,7 +49,7 @@
     &__cours {
         background-repeat: no-repeat;
         background-position: 95% 3%;
-        background-color: $color__background-cours;
+        background-color: rgba(34, 33, 33, 0.801);
         box-shadow: rgb(177, 150, 228) 1px -1px 10px;
         border: solid 3px hsl(231, 75%, 70%);
         transition: 0.8s;
@@ -58,7 +63,7 @@
                //justify-content: flex-start;
                @media screen and (min-width : $largeur__media--tablette) {  
                align-items: center;
-                
+               background-color: $color__background-cours;
                }
 
 
@@ -147,10 +152,38 @@ a {
 a:hover{
 	color: rgb(253, 253, 253);
 }
+.web{
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe');
+    background-size: 50px 50px;
+
+   
+   
+}
+.video{
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=videocam');
+    background-size: 400px 400px;
+}
+.utilitaire{
+    background-image: url('https://s2.svgbox.net/social.svg?ic=angellist');
+    background-size: 400px 400px;
+}
+.jeu{
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=videogame_asset');
+    background-size: 400px 400px;
+}
+.design{
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=pencil');
+    background-size: 400px 400px;
+    
+}
+.creation-3d{
+    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=cube');
+    background-size: 400px 400px;
+}
 
 //icon ans formation
 
-
+@media screen and (min-width : $largeur__media--tablette) {
 .web{
     background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe');
     background-size: 50px 50px;
@@ -179,7 +212,7 @@ a:hover{
     background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=cube');
     background-size: 50px 50px;
 }
-@media screen and (min-width : $largeur__media--tablette) {
+
 .creation-3d:hover{
     background-size: 430px 430px; 
 }

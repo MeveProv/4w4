@@ -3,7 +3,7 @@
   background-color: $color__background-header;
   color: $color__font-header;
   padding-left: 40px;
-  box-shadow: rgb(8, 8, 8) 1px -1px 20px;
+  box-shadow: rgb(241, 241, 241) 1px -1px 20px;//blanc cest meiux 
   border: 1px solid white;
   
   background-image: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-1');
@@ -22,7 +22,7 @@
 
     font-size: clamp(1rem, 2vw, 3rem);
     font-family: $font__main;
-    padding-left: 40px;
+    padding-left: 90px; ///90px si cadrer
 
   }
 }
@@ -32,6 +32,7 @@
 svg {
   display: flex;
   color: $color__background-footer;
+ 
 
 
 
@@ -43,6 +44,8 @@ svg {
 .iconeMenu {
   transform: rotateZ(180deg);
   margin-right: 5px;
+  
+  
 }
 
 svg:hover {

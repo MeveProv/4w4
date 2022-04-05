@@ -410,12 +410,19 @@ COMPOSANTES
   margin: 40px;
   background-color: #5e5c5cd6;
   background-color: rgba(126, 126, 126, 0.84);
-  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=cube");
   box-shadow: #000000ec 1px 1px 30px 3px;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("https://s2.svgbox.net/heropatterns.svg?ic=lips");
+  background-image: url("https://s2.svgbox.net/heropatterns.svg?ic=topography");
+}
+
+@media screen and (min-width: 800px) {
+  .principal {
+    background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=cube");
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -449,7 +456,7 @@ COMPOSANTES
 .formation__cours {
   background-repeat: no-repeat;
   background-position: 95% 3%;
-  background-color: rgba(220, 219, 218, 0.253);
+  background-color: rgba(34, 33, 33, 0.801);
   box-shadow: #b196e4 1px -1px 10px;
   border: solid 3px #798aec;
   transition: 0.8s;
@@ -465,6 +472,7 @@ COMPOSANTES
 @media screen and (min-width: 800px) {
   .formation__cours {
     align-items: center;
+    background-color: rgba(220, 219, 218, 0.253);
   }
 }
 
@@ -546,30 +554,54 @@ a:hover {
 
 .video {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=videocam");
-  background-size: 50px 50px;
+  background-size: 400px 400px;
 }
 
 .utilitaire {
   background-image: url("https://s2.svgbox.net/social.svg?ic=angellist");
-  background-size: 50px 50px;
+  background-size: 400px 400px;
 }
 
 .jeu {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=videogame_asset");
-  background-size: 50px 50px;
+  background-size: 400px 400px;
 }
 
 .design {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=pencil");
-  background-size: 50px 50px;
+  background-size: 400px 400px;
 }
 
 .creation-3d {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=cube");
-  background-size: 50px 50px;
+  background-size: 400px 400px;
 }
 
 @media screen and (min-width: 800px) {
+  .web {
+    background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe");
+    background-size: 50px 50px;
+  }
+  .video {
+    background-image: url("https://s2.svgbox.net/materialui.svg?ic=videocam");
+    background-size: 50px 50px;
+  }
+  .utilitaire {
+    background-image: url("https://s2.svgbox.net/social.svg?ic=angellist");
+    background-size: 50px 50px;
+  }
+  .jeu {
+    background-image: url("https://s2.svgbox.net/materialui.svg?ic=videogame_asset");
+    background-size: 50px 50px;
+  }
+  .design {
+    background-image: url("https://s2.svgbox.net/octicons.svg?ic=pencil");
+    background-size: 50px 50px;
+  }
+  .creation-3d {
+    background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=cube");
+    background-size: 50px 50px;
+  }
   .creation-3d:hover {
     background-size: 430px 430px;
   }
@@ -594,7 +626,7 @@ a:hover {
   background-color: #bbecee00;
   color: #f1eeee;
   padding-left: 40px;
-  box-shadow: #080808 1px -1px 20px;
+  box-shadow: #f1f1f1 1px -1px 20px;
   border: 1px solid white;
   background-image: url("https://s2.svgbox.net/pen-brushes.svg?ic=brush-1");
   background-repeat: no-repeat;
@@ -610,7 +642,7 @@ a:hover {
 .site__header .header__description {
   font-size: clamp(1rem, 2vw, 3rem);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding-left: 40px;
+  padding-left: 90px;
 }
 
 svg {
@@ -731,12 +763,11 @@ svg:hover {
 .menu {
   list-style-type: none;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  margin: 1px;
+  padding: 1px;
 }
 
 .menu-item {
-  margin: 0;
   padding: 10px;
   padding-top: 35px;
   display: flex;
@@ -747,22 +778,27 @@ svg:hover {
   text-decoration: none;
   display: flex;
   text-shadow: 1px 2px 5px black;
-  justify-content: center;
+  justify-content: flex-start;
   border: solid 1px white;
   height: 50px;
   align-items: center;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   color: aqua;
   background-color: #4e4e4e;
   font-size: 1.2rem;
   box-shadow: #222222 1px -1px 10px 3px;
+  padding-left: 20px;
 }
 
 .menu-item a:hover {
   background-color: #292828;
   color: #798aec;
   box-shadow: #b196e4 1px -1px 10px 2px;
+}
+
+.menu-item a:hover svg {
+  color: whitesmoke;
 }
 
 @media screen and (min-width: 800px) {
@@ -824,6 +860,11 @@ svg:hover {
 
 .site__footer__menu__ul .menu-item a:hover {
   box-shadow: #b195e4 0px -1px 10px;
+  box-shadow: #b196e4 1px 1px 20px 2px;
+}
+
+.site__footer__menu__ul .menu-item a:hover svg {
+  color: aliceblue;
 }
 
 .site__footer__menu__ul .menu-item a svg {
@@ -936,6 +977,13 @@ div.animation__bloc:hover {
   color: azure;
 }
 
+div.animation__bloc:nth-of-type(1):hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: azure;
+  transform: scale(1.3);
+}
+
 div.animation__bloc:nth-of-type(1) {
   animation: anim_bloc 1s 1s forwards ease-in-out;
   animation-delay: 1s;
@@ -977,8 +1025,10 @@ div.animation__bloc:nth-of-type(5) {
   background-color: black;
   z-index: 2;
   color: #df6f6f;
-  color: #df6f6f;
+  color: #f4e3e3;
   box-shadow: 1px 1px 20px 5px #dbdada;
+  background-image: url("https://s2.svgbox.net/loaders.svg?ic=circles");
+  background-image: url("https://s2.svgbox.net/loaders.svg?ic=spinning-circles");
 }
 
 @media screen and (min-width: 800px) {
@@ -988,15 +1038,41 @@ div.animation__bloc:nth-of-type(5) {
   }
 }
 
+.animation__bloc:nth-of-type(1) {
+  background-image: url("https://s2.svgbox.net/loaders.svg?ic=grid");
+  background-size: 100px 100px;
+}
+
+.animation__bloc:nth-of-type(2) {
+  background-image: url("https://s2.svgbox.net/loaders.svg?ic=bars");
+  background-size: 90px 90px;
+}
+
+.animation__bloc:nth-of-type(3) {
+  background-image: url("https://s2.svgbox.net/loaders.svg?ic=circles");
+  background-size: 100px 100px;
+}
+
+.animation__bloc:nth-of-type(4) {
+  background-image: url("https://s2.svgbox.net/loaders.svg?ic=audio");
+  background-size: 100px 100px;
+}
+
+.animation__bloc:nth-of-type(5) {
+  background-image: url("https://s2.svgbox.net/loaders.svg?ic=puff");
+  background-size: 100px 100px;
+}
+
 @keyframes anim_bloc {
   0% {
     transform: translateY(-100vh);
   }
   75% {
     transform: translateY(500px) rotate(360deg);
+    width: 0px;
   }
   100% {
-    transform: translateY(10px) rotate(360deg);
+    transform: translateY(10px) rotate(360deg) scale(0.8);
   }
 }
 

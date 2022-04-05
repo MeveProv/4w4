@@ -46,7 +46,11 @@
 
           &:hover {
            
-            box-shadow: rgb(177, 149, 228) 0px -1px 10px;
+            box-shadow: rgb(177, 149, 228) 0px -1px 10px;// cest ici
+            box-shadow: rgb(177, 150, 228) 1px 1px 20px 2px;
+            svg {
+              color: aliceblue;
+            }
           }
 
           svg {
