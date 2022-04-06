@@ -1,0 +1,27 @@
+.menu-menu_accueil-container{//nav
+//background-color: transparent;
+
+    .menu{
+        display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 101, 101);
+    .menu-item{
+        //width: 20%;
+        a{
+            background-color: aliceblue;
+            color: rgb(255, 238, 0);
+            font-size: 3rem;
+            .menu-item-description{
+                color: rgb(159, 255, 127);
+            }
+        }
+        &:hover{
+            a{
+font-size: 1rem;
+            }
+        }
+    }
+
+    }
+
+}

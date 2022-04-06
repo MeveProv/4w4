@@ -1153,6 +1153,26 @@ div.animation__bloc:nth-of-type(5) {
   box-shadow: #222222 1px -1px 10px 3px;
 }
 
+.menu-menu_accueil-container .menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f36565;
+}
+
+.menu-menu_accueil-container .menu .menu-item a {
+  background-color: aliceblue;
+  color: #ffee00;
+  font-size: 3rem;
+}
+
+.menu-menu_accueil-container .menu .menu-item a .menu-item-description {
+  color: #9fff7f;
+}
+
+.menu-menu_accueil-container .menu .menu-item:hover a {
+  font-size: 1rem;
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
