@@ -10,9 +10,16 @@
         <div class="animation__bloc">Photoshop</div>
     </section>
     <?php
-    //on appel le menu
-        wp_nav_menu(array("menu"=>"menu_accueil",
+    //on appel le menu accueil
+        wp_nav_menu(array("menu"=>"accueil",
                             "container"=>"nav"));
+                            
+    ?>
+    <?php
+    //on appel le menu evenement
+        wp_nav_menu(array("menu"=>"evenement",
+                            "container"=>"nav"));
+                            
     ?>
     <h4>et le portefolio de Marie-Eve...</h4>
    

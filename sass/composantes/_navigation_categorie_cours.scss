@@ -1,47 +1,58 @@
-.menu-categorie_cours-container{ //nav
+.menu-categorie_cours-container {
+    //nav
 
 
-   
-.menu{ //ul
-display: flex;
-@media screen and (min-width : $largeur__media--tablette) {
-   flex-direction: row; 
-}
-flex-direction: column;
-background-color: #82b9bbb4;
 
-box-shadow: #e6e4e4 1px 1px 20px 3px;
-list-style-type: none;
-padding: 5px;
-margin-bottom: 20px;
-//border: solid 1px rgb(244, 248, 248);
+    .menu {
+        //ul
+        display: flex;
 
-    .menu-item{ //  li
-        
-     margin:  0 15px;
-     //background-color: $color__bouton__background;
-padding-top: 10px;
-        a{
-         color:    $color__bouton__color;
-padding: 5px;
-border: 1px solid black;
+        @media screen and (min-width : $largeur__media--tablette) {
+            flex-direction: row;
+        }
+
+        flex-direction: column;
+        background-color: #82b9bbb4;
+
+        box-shadow: #e6e4e4 1px 1px 20px 3px;
+        list-style-type: none;
+        padding: 5px;
+        margin-bottom: 20px;
+        //border: solid 1px rgb(244, 248, 248);
+
+        .menu-item {
+            //  li
+
+            margin: 0 15px;
+            //background-color: $color__bouton__background;
+            padding-top: 10px;
+
+            a {
+                color: $color__bouton__color;
+                padding: 5px;
+                border: 1px solid black;
+
+            }
 
         }
-        
-    }
-    &:hover{
 
-        a{
-           color: $color__bouton__color--hover;
-           box-shadow: #222222 1px -1px 10px 3px;
-          // background-image: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-6');
-          
-}
+        &:hover {
+
+            a {
+                color: $color__bouton__color--hover;
+                box-shadow: #222222 1px -1px 10px 3px;
+                // background-image: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-6');
+
+            }
 
 
-            
+
+        }
+        .current-menu-item {
+            background-color: rgb(29, 29, 28);
+            a{
+color:  #798aec;;
+            }
         }
     }
 }
-
-

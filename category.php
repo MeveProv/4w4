@@ -7,11 +7,23 @@
     )); 
     ?>
     <section class="formation">
+        <a href="?cletri=title&ordre=asc">Tri Ascendant</a>
+        <a href="?cletri=title&ordre=desc">Tri Decendant</a>
+        
+        <?php
+
+$slug_categorie_de_la_page = trouve_la_categorie(array('cours','creation-3d','web','jeu','design','utilitaire','video'));
+
+$ma_categorie = get_category_by_slug($slug_categorie_de_la_page);
+
+echo "<h2>" . $ma_categorie->name . "</h2>";
+
+?> 
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
         <div class="formation__liste">
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
-                <?php 
+                 <?php 
                       //the_category();
                      $categories = get_the_category();
                      //var_dump($categories);
@@ -39,6 +51,8 @@
                         <p class="cours__sigle"><?= $sigleCours; ?> </p>
                         <p class="cours__desc"> <?= $descCours; ?></p>
                     </article>
+                
+                
                 <?php endwhile ?>
                 <?php endif ?>
         </div>

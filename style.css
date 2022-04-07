@@ -1153,24 +1153,79 @@ div.animation__bloc:nth-of-type(5) {
   box-shadow: #222222 1px -1px 10px 3px;
 }
 
-.menu-menu_accueil-container .menu {
+.menu-categorie_cours-container .menu .current-menu-item {
+  background-color: #1d1d1c;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item a {
+  color: #798aec;
+}
+
+.menu-accueil-container {
   display: flex;
+  flex-direction: row;
+}
+
+.menu-accueil-container .menu {
+  display: flex;
+  margin: 20px;
+}
+
+.menu-accueil-container .menu .menu-item {
   flex-direction: column;
-  background-color: #f36565;
 }
 
-.menu-menu_accueil-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a {
   background-color: aliceblue;
-  color: #ffee00;
-  font-size: 3rem;
+  color: #020202;
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 0px black;
+  background-color: rgba(121, 244, 229, 0.504);
+  flex-wrap: wrap;
+  height: 200px;
 }
 
-.menu-menu_accueil-container .menu .menu-item a .menu-item-description {
-  color: #9fff7f;
+.menu-accueil-container .menu .menu-item a .menu-item-description {
+  color: white;
 }
 
-.menu-menu_accueil-container .menu .menu-item:hover a {
-  font-size: 1rem;
+.menu-accueil-container .menu .menu-item:hover a {
+  font-size: 1.5rem;
+  box-shadow: #efedf3 1px -1px 10px 2px;
+}
+
+.menu-evenement-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-evenement-container .menu {
+  display: flex;
+  margin: 20px;
+}
+
+.menu-evenement-container .menu .menu-item {
+  flex-direction: column;
+}
+
+.menu-evenement-container .menu .menu-item a {
+  background-color: aliceblue;
+  color: #020202;
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 0px black;
+  background-color: rgba(121, 244, 229, 0.504);
+  flex-wrap: wrap;
+  height: 100px;
+  width: 250px;
+}
+
+.menu-evenement-container .menu .menu-item a .menu-item-description {
+  color: white;
+}
+
+.menu-evenement-container .menu .menu-item:hover a {
+  font-size: 1.5rem;
+  box-shadow: #efedf3 1px -1px 10px 2px;
 }
 
 /* ---------------------------------------------------------

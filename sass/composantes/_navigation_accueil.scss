@@ -1,23 +1,37 @@
-.menu-menu_accueil-container{//nav
+.menu-accueil-container{//nav
 //background-color: transparent;
+display: flex;
+flex-direction: row;
 
     .menu{
         display: flex;
-    flex-direction: column;
-    background-color: rgb(243, 101, 101);
+    //flex-direction: column;
+    margin: 20px;
+   
+  
+  
+    //background-color: rgba(121, 244, 229, 0.504);
     .menu-item{
         //width: 20%;
+       flex-direction: column;
+        
+      
         a{
             background-color: aliceblue;
-            color: rgb(255, 238, 0);
-            font-size: 3rem;
+            color: rgb(2, 2, 2);
+            font-size: 1.2rem;
+            text-shadow: 0px 0px 0px black;
+            background-color: rgba(121, 244, 229, 0.504);
+            flex-wrap: wrap;
+            height: 200px;
             .menu-item-description{
-                color: rgb(159, 255, 127);
+                color: rgb(255, 255, 255);
             }
         }
         &:hover{
             a{
-font-size: 1rem;
+font-size: 1.5rem;
+box-shadow: rgb(239, 237, 243) 1px -1px 10px 2px;
             }
         }
     }
@@ -25,3 +39,46 @@ font-size: 1rem;
     }
 
 }
+.menu-evenement-container{//nav
+    //background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    
+        .menu{
+            display: flex;
+        //flex-direction: column;
+        margin: 20px;
+       
+      
+      
+        //background-color: rgba(121, 244, 229, 0.504);
+        .menu-item{
+            //width: 20%;
+           flex-direction: column;
+            
+          
+            a{
+                background-color: aliceblue;
+                color: rgb(2, 2, 2);
+                font-size: 1.2rem;
+                text-shadow: 0px 0px 0px black;
+                background-color: rgba(121, 244, 229, 0.504);
+                flex-wrap: wrap;
+                height: 100px;
+                width: 250px;
+                .menu-item-description{
+                    color: rgb(255, 255, 255);
+                }
+            }
+            &:hover{
+                a{
+    font-size: 1.5rem;
+    box-shadow: rgb(239, 237, 243) 1px -1px 10px 2px;
+                }
+            }
+        }
+    
+        }
+    
+    }
+    
