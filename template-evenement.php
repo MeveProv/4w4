@@ -14,6 +14,11 @@ get_header();
 ?>
 <main class="site__main">
 <h1>----------evenement-------</h1>
+<h2>----Ceci est une page example pour template evenement</h2>
+<?php
+  echo get_custom_logo();
+?>
+
 <?php if(have_posts()):the_post();?>
 
 <?php the_title();?>

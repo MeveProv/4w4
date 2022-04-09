@@ -90,6 +90,7 @@
   flex-direction:column;
   justify-content: space-around;
   padding: 20px;
+  
   @media screen and (min-width : $largeur__media--tablette) {
     flex-direction: row;
   }

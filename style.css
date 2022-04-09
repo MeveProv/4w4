@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: TP1 gr2 Marie-Eve Provost
+theme name: 2022-4w4 Exercice- 3  Marie-Eve Provost
 Author: Marie-Eve Provost
 Author URI: https://github.com/MeveProv/4w4.git
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -1164,11 +1164,18 @@ div.animation__bloc:nth-of-type(5) {
 .menu-accueil-container {
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-accueil-container .menu {
-  display: flex;
   margin: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-accueil-container .menu {
+    display: flex;
+  }
 }
 
 .menu-accueil-container .menu .menu-item {
@@ -1182,7 +1189,12 @@ div.animation__bloc:nth-of-type(5) {
   text-shadow: 0px 0px 0px black;
   background-color: rgba(121, 244, 229, 0.504);
   flex-wrap: wrap;
-  height: 200px;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-accueil-container .menu .menu-item a {
+    height: 200px;
+  }
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-description {
@@ -1190,8 +1202,13 @@ div.animation__bloc:nth-of-type(5) {
 }
 
 .menu-accueil-container .menu .menu-item:hover a {
-  font-size: 1.5rem;
   box-shadow: #efedf3 1px -1px 10px 2px;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-accueil-container .menu .menu-item:hover a {
+    font-size: 1.5rem;
+  }
 }
 
 .menu-evenement-container {
@@ -1215,8 +1232,13 @@ div.animation__bloc:nth-of-type(5) {
   text-shadow: 0px 0px 0px black;
   background-color: rgba(121, 244, 229, 0.504);
   flex-wrap: wrap;
-  height: 100px;
-  width: 250px;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-evenement-container .menu .menu-item a {
+    height: 100px;
+    width: 250px;
+  }
 }
 
 .menu-evenement-container .menu .menu-item a .menu-item-description {
