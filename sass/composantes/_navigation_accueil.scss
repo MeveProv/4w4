@@ -37,9 +37,7 @@ padding: 0;
 
         &:hover{
             a{
-                @media screen and (min-width : $largeur__media--tablette) {
-font-size: 1.5rem;
-                }
+                
 box-shadow: rgb(239, 237, 243) 1px -1px 10px 2px;
             }
         }
@@ -73,6 +71,7 @@ box-shadow: rgb(239, 237, 243) 1px -1px 10px 2px;
                 text-shadow: 0px 0px 0px black;
                 background-color: rgba(121, 244, 229, 0.504);
                 flex-wrap: wrap;
+                height: 150px;
                 @media screen and (min-width : $largeur__media--tablette) {
                 height: 100px;
                 width: 250px;
@@ -83,7 +82,9 @@ box-shadow: rgb(239, 237, 243) 1px -1px 10px 2px;
             }
             &:hover{
                 a{
+                    @media screen and (min-width : $largeur__media--tablette) {
     font-size: 1.5rem;
+                    }
     box-shadow: rgb(239, 237, 243) 1px -1px 10px 2px;
                 }
             }

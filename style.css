@@ -625,12 +625,17 @@ a:hover {
 .site__header {
   background-color: #bbecee00;
   color: #f1eeee;
-  padding-left: 40px;
   box-shadow: #f1f1f1 1px -1px 20px;
   border: 1px solid white;
-  background-image: url("https://s2.svgbox.net/pen-brushes.svg?ic=brush-1");
-  background-repeat: no-repeat;
-  background-size: 700px 300px;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header {
+    padding-left: 40px;
+    background-image: url("https://s2.svgbox.net/pen-brushes.svg?ic=brush-1");
+    background-repeat: no-repeat;
+    background-size: 700px 300px;
+  }
 }
 
 .site__header .header__titre {
@@ -642,7 +647,12 @@ a:hover {
 .site__header .header__description {
   font-size: clamp(1rem, 2vw, 3rem);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding-left: 90px;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header .header__description {
+    padding-left: 90px;
+  }
 }
 
 svg {
@@ -846,7 +856,8 @@ svg:hover {
 .site__footer__menu__ul .menu-item a {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 30px;
+  width: 130px;
   border: none;
 }
 
@@ -916,6 +927,17 @@ svg:hover {
 .wp-embed-aspect-4-3 {
   padding: 10px;
   border: 1px solid white;
+}
+
+.wp-block-gallery {
+  width: 40%;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 800px) {
+  .wp-block-gallery {
+    width: 100%;
+  }
 }
 
 .blocks-gallery-grid {
@@ -1109,7 +1131,13 @@ div.animation__bloc:nth-of-type(5) {
 .recherche {
   background-color: transparent;
   position: relative;
-  padding-right: 40px;
+  padding-right: 0px;
+}
+
+@media screen and (min-width: 800px) {
+  .recherche {
+    padding-right: 40px;
+  }
 }
 
 .recherche__input {
@@ -1205,12 +1233,6 @@ div.animation__bloc:nth-of-type(5) {
   box-shadow: #efedf3 1px -1px 10px 2px;
 }
 
-@media screen and (min-width: 800px) {
-  .menu-accueil-container .menu .menu-item:hover a {
-    font-size: 1.5rem;
-  }
-}
-
 .menu-evenement-container {
   display: flex;
   flex-direction: row;
@@ -1232,6 +1254,7 @@ div.animation__bloc:nth-of-type(5) {
   text-shadow: 0px 0px 0px black;
   background-color: rgba(121, 244, 229, 0.504);
   flex-wrap: wrap;
+  height: 150px;
 }
 
 @media screen and (min-width: 800px) {
@@ -1246,8 +1269,13 @@ div.animation__bloc:nth-of-type(5) {
 }
 
 .menu-evenement-container .menu .menu-item:hover a {
-  font-size: 1.5rem;
   box-shadow: #efedf3 1px -1px 10px 2px;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-evenement-container .menu .menu-item:hover a {
+    font-size: 1.5rem;
+  }
 }
 
 /* ---------------------------------------------------------
@@ -1270,9 +1298,14 @@ LAYOUT
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #0d0e0d;
-  z-index: -1;
-  clip-path: polygon(85% 0, 100% 0, 100% 100%, 19% 100%);
+}
+
+@media screen and (min-width: 800px) {
+  .home::after {
+    background-color: #0d0e0d;
+    z-index: -1;
+    clip-path: polygon(85% 0, 100% 0, 100% 100%, 19% 100%);
+  }
 }
 
 .site__header {

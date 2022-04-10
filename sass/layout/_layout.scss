@@ -17,9 +17,12 @@
     bottom: 0;
     left: 0;
     right: 0;
+    @media screen and (min-width : $largeur__media--tablette) {
     background-color: rgb(13, 14, 13);
     z-index: -1;
+
     clip-path: polygon(85% 0, 100% 0, 100% 100%, 19% 100%);
+    }
 }
 
 

@@ -28,7 +28,9 @@
           
           display: flex;
           align-items: center;
-          height: 50px;
+          //height: 50px;
+          height: 30px;
+            width: 130px;
 
           /////Ajustement format tablette//////
           @media screen and (min-width : $largeur__media--tablette) {
@@ -118,4 +120,19 @@
   border: 1px solid white;
 
 
+}
+.site__footer__adresse{
+ 
+  //padding-left: 100px;
+  //width: 400px;
+  
+}
+
+.wp-block-gallery{
+  width: 40%;
+  margin-top: 50px;
+  
+  @media screen and (min-width : $largeur__media--tablette) {
+    width: 100%;
+  }
 }
