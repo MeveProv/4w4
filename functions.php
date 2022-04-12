@@ -28,7 +28,7 @@ add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
 function prefix_nav_description( $item_output, $item) {
     if ( !empty( $item->description ) ) {
         $item_output = str_replace( '</a>',
-        '<hr><span class="menu-item-description">' . $item->description . '</span>' .  '</a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span></a>',
               $item_output );
     }
     return $item_output;
@@ -145,13 +145,12 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
         }
         else 
         {
-           $ordre = get_query_var('ordre','asc');
-           $cle = get_query_var('cletri','title');
-
-
-        $query->set('orderby', $cle);
-        $query->set('order', $ordre);
-        return $query;
+           $ordre = get_query_var('ordre','asc');//par default ascendant
+           $cle = get_query_var('cletri','title');//par defaut title
+           $query->set('orderby', $cle);
+           $query->set('order', $ordre);
+           
+         return $query;
         }
     }
     
@@ -159,7 +158,7 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
         $params[] = "ordre";
         $params[] = "cletri";
         return $params;
-       
+       ///apaarait barr recherche
     }
     add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');//modifier la requete de base un hook(evenement) se manifeste juste avant que la requete wp_query soit executer
     //ce hook nous permettreras dadapter la requete dexecuter cette requete
