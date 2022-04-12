@@ -134,15 +134,8 @@ function my_register_sidebars() {
     
     
 }
-?>
 
-<?php
-/**
- * 
- * 
- * 
- */
-    function cidw_4w4_pre_get_posts(WP_Query $query)
+function cidw_4w4_pre_get_posts(WP_Query $query)
     {
         if (!is_admin() || is_main_query() || is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu')))
         {
