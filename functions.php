@@ -137,41 +137,29 @@ function my_register_sidebars() {
 
 function cidw_4w4_pre_get_posts(WP_Query $query)
     {
-        if (!is_admin() || is_main_query() || is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu')))
+        if (is_admin() 
+            || !$query->is_main_query() 
+            || !$query->is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu')))
         {
           return $query;
         }
-        else{
-        $ordre = get_query_var('ordre');
-        
-        $cle = get_query_var('cletri');
-       
-        $query->set('order', $ordre);
+        else 
+        {
+           $ordre = get_query_var('ordre','asc');
+           $cle = get_query_var('cletri','title');
+
+
         $query->set('orderby', $cle);
+        $query->set('order', $ordre);
         return $query;
         }
-      //if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
-       // {
-        //$ordre = get_query_var('ordre');
-        //$query->set('posts_per_page', -1);
-        // $query->set('orderby', $cle);
-        //$query->set('orderby', 'title');
-        // $query->set('order',  $ordre);
-        //$query->set('order',  'ASC');
-        // var_dump($query);
-        // die();
-      // }
     }
+    
     function cidw_4w4_query_vars($params){
         $params[] = "ordre";
         $params[] = "cletri";
         return $params;
-        //var_dump($params);
-        //$params[] = "cletri";
-        //$params[] = "ordre";
-        //$params["cletri"] = "title";
-        //var_dump($params); die();
-        //return $params;
+       
     }
     add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');//modifier la requete de base un hook(evenement) se manifeste juste avant que la requete wp_query soit executer
     //ce hook nous permettreras dadapter la requete dexecuter cette requete
