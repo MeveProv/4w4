@@ -18,13 +18,13 @@
         list-style-type: none;
         padding: 5px;
         margin-bottom: 20px;
-        //border: solid 1px rgb(244, 248, 248);
+
 
         .menu-item {
             //  li
 
             margin: 0 15px;
-            //background-color: $color__bouton__background;
+
             padding-top: 10px;
 
             a {
@@ -41,17 +41,20 @@
             a {
                 color: $color__bouton__color--hover;
                 box-shadow: #222222 1px -1px 10px 3px;
-                // background-image: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-6');
+
 
             }
 
 
 
         }
+
         .current-menu-item {
             background-color: rgb(29, 29, 28);
-            a{
-color:  #798aec;;
+
+            a {
+                color: #798aec;
+                ;
             }
         }
     }
