@@ -375,6 +375,8 @@ h1 {
 
 h2 {
   font-size: 3rem;
+  text-align: center;
+  color: white;
 }
 
 h3 {
@@ -669,7 +671,7 @@ span.menu-item-description {
 
 @media screen and (min-width: 800px) {
   .site__header .header__description {
-    padding-left: 90px;
+    padding-left: 30px;
   }
 }
 
@@ -1200,11 +1202,13 @@ div.animation__bloc:nth-of-type(5) {
 }
 
 .menu-categorie_cours-container .menu .current-menu-item {
-  background-color: #1d1d1c;
+  background-color: rgba(29, 29, 28, 0.838);
+  border-radius: 5%;
 }
 
 .menu-categorie_cours-container .menu .current-menu-item a {
   color: #798aec;
+  background-color: #262727;
 }
 
 @keyframes animIcon {

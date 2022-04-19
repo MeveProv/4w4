@@ -27,7 +27,7 @@
     font-size: clamp(1rem, 2vw, 3rem);
     font-family: $font__main;
     @media screen and (min-width : $largeur__media--tablette) {
-    padding-left: 90px; ///90px si cadrer
+    padding-left: 30px; ///90px si cadrer
     }
   }
 }
