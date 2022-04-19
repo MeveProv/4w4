@@ -1,3 +1,55 @@
+/////animation pour le menu front page
+@keyframes animIcon {
+
+    from {
+
+        opacity: 0;
+        //font-size: 5rem;
+        height: 12px;
+        width: 12px;
+    }
+
+
+    25% {
+        margin-bottom: 60px;
+        opacity: 0.15;
+        //font-size: 7rem;
+        height: 26px;
+        width: 26px;
+
+    }
+
+
+    50% {
+
+        opacity: 0.25;
+        color: cyan;
+        //font-size: 9rem;
+        height: 32px;
+        width: 32px;
+
+    }
+
+
+    75% {
+
+        opacity: 0.40;
+        //font-size: 7rem;
+        height: 36px;
+        width: 36px;
+
+    }
+
+
+
+    to {
+
+        opacity: 1;
+
+
+    }
+}
+
 .menu-accueil-container {
     //nav
     //background-color: transparent;
@@ -29,7 +81,13 @@
                 font-size: 1.2rem;
                 text-shadow: 0px 0px 0px black;
                 background-color: rgba(121, 244, 229, 0.504);
-                flex-wrap: wrap;
+                //flex-wrap: wrap;
+                display: flex;
+
+                transition: 0.15s;
+                align-items: center;
+                width: 200px;
+
 
                 @media screen and (min-width : $largeur__media--tablette) {
                     height: 200px;
@@ -37,23 +95,37 @@
 
                 .menu-item-description {
                     color: rgb(255, 255, 255);
-                    
+
                 }
-                .iconeMenuAccueil{
+
+                .iconeMenuAccueil {
                     color: aqua;
-                   
+
+                    //animation-iteration-count: infinite;
+
+
                     margin-right: 5px;
+
                 }
-                
+
+
             }
 
-            &:hover {
-                a {
+            @media screen and (min-width : $largeur__media--tablette) {
+                &:hover {
+                    a {
+                        background-color: rgba(16, 16, 16, 0.787);
+                        box-shadow: rgb(239, 237, 243) 1px -1px 10px 2px;
+                        border-radius: 50%;
+                        color: cyan;
+                        border: solid 1px white;
 
-                    box-shadow: rgb(239, 237, 243) 1px -1px 10px 2px;
-                    .iconeMenuAccueil{
-                        color: aliceblue;
-                       
+                        .iconeMenuAccueil {
+                            color: aliceblue;
+                            animation-name: animIcon;
+                            animation-duration: 0.5s;
+                            animation-timing-function: ease-in;
+                        }
                     }
                 }
             }
@@ -99,7 +171,8 @@
                 .menu-item-description {
                     color: rgb(255, 255, 255);
                 }
-                .iconeMenuEvenement{
+
+                .iconeMenuEvenement {
                     color: rgb(176, 238, 238);
                     transform: rotateZ(180deg);
                     margin-right: 5px;

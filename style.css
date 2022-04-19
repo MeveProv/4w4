@@ -622,6 +622,16 @@ a:hover {
   }
 }
 
+h5 {
+  color: #f7f8f8;
+  font-size: clamp(1rem, 3vw, 3rem);
+  z-index: 3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-shadow: 1px 1px 20px #dbdada;
+  letter-spacing: 0.2rem;
+}
+
 p.cours__dep {
   color: #8d96c2;
 }
@@ -1197,6 +1207,34 @@ div.animation__bloc:nth-of-type(5) {
   color: #798aec;
 }
 
+@keyframes animIcon {
+  from {
+    opacity: 0;
+    height: 12px;
+    width: 12px;
+  }
+  25% {
+    margin-bottom: 60px;
+    opacity: 0.15;
+    height: 26px;
+    width: 26px;
+  }
+  50% {
+    opacity: 0.25;
+    color: cyan;
+    height: 32px;
+    width: 32px;
+  }
+  75% {
+    opacity: 0.40;
+    height: 36px;
+    width: 36px;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .menu-accueil-container {
   display: flex;
   flex-direction: row;
@@ -1224,7 +1262,10 @@ div.animation__bloc:nth-of-type(5) {
   font-size: 1.2rem;
   text-shadow: 0px 0px 0px black;
   background-color: rgba(121, 244, 229, 0.504);
-  flex-wrap: wrap;
+  display: flex;
+  transition: 0.15s;
+  align-items: center;
+  width: 200px;
 }
 
 @media screen and (min-width: 800px) {
@@ -1242,12 +1283,20 @@ div.animation__bloc:nth-of-type(5) {
   margin-right: 5px;
 }
 
-.menu-accueil-container .menu .menu-item:hover a {
-  box-shadow: #efedf3 1px -1px 10px 2px;
-}
-
-.menu-accueil-container .menu .menu-item:hover a .iconeMenuAccueil {
-  color: aliceblue;
+@media screen and (min-width: 800px) {
+  .menu-accueil-container .menu .menu-item:hover a {
+    background-color: rgba(16, 16, 16, 0.787);
+    box-shadow: #efedf3 1px -1px 10px 2px;
+    border-radius: 50%;
+    color: cyan;
+    border: solid 1px white;
+  }
+  .menu-accueil-container .menu .menu-item:hover a .iconeMenuAccueil {
+    color: aliceblue;
+    animation-name: animIcon;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+  }
 }
 
 .menu-evenement-container {
