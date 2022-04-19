@@ -41,8 +41,10 @@ echo "<h2>" . $ma_categorie->name . "</h2>";
 
                         //$sigleCours = substr($titre, 0, 7);
                         $sigleCours = substr($titre, 0, 3);//a mettre avec la nouvelle base de donné
-                        $descCours = get_the_excerpt();
-                     
+                        //$descCours = get_the_excerpt();
+                        ///
+                        //creation du bouton pour lire la suite 
+                        $descCours = wp_trim_words(get_the_content(),15,'<button class="cours__desc__suite" href=#> Lire la suite </button>');
                         ?>
                         
                         <?php the_post_thumbnail("thumbnail");?>
