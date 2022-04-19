@@ -622,6 +622,14 @@ a:hover {
   }
 }
 
+p.cours__dep {
+  color: #8d96c2;
+}
+
+span.menu-item-description {
+  display: none;
+}
+
 .site__header {
   background-color: #bbecee00;
   color: #f1eeee;
