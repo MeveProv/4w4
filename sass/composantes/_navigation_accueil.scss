@@ -39,12 +39,22 @@
                     color: rgb(255, 255, 255);
                     
                 }
+                .iconeMenuAccueil{
+                    color: aqua;
+                   
+                    margin-right: 5px;
+                }
+                
             }
 
             &:hover {
                 a {
 
                     box-shadow: rgb(239, 237, 243) 1px -1px 10px 2px;
+                    .iconeMenuAccueil{
+                        color: aliceblue;
+                       
+                    }
                 }
             }
         }
@@ -88,6 +98,11 @@
 
                 .menu-item-description {
                     color: rgb(255, 255, 255);
+                }
+                .iconeMenuEvenement{
+                    color: rgb(176, 238, 238);
+                    transform: rotateZ(180deg);
+                    margin-right: 5px;
                 }
             }
 

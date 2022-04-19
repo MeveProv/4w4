@@ -1237,8 +1237,17 @@ div.animation__bloc:nth-of-type(5) {
   color: white;
 }
 
+.menu-accueil-container .menu .menu-item a .iconeMenuAccueil {
+  color: aqua;
+  margin-right: 5px;
+}
+
 .menu-accueil-container .menu .menu-item:hover a {
   box-shadow: #efedf3 1px -1px 10px 2px;
+}
+
+.menu-accueil-container .menu .menu-item:hover a .iconeMenuAccueil {
+  color: aliceblue;
 }
 
 .menu-evenement-container {
@@ -1276,6 +1285,12 @@ div.animation__bloc:nth-of-type(5) {
   color: white;
 }
 
+.menu-evenement-container .menu .menu-item a .iconeMenuEvenement {
+  color: #b0eeee;
+  transform: rotateZ(180deg);
+  margin-right: 5px;
+}
+
 .menu-evenement-container .menu .menu-item:hover a {
   box-shadow: #efedf3 1px -1px 10px 2px;
 }
@@ -1284,6 +1299,22 @@ div.animation__bloc:nth-of-type(5) {
   .menu-evenement-container .menu .menu-item:hover a {
     font-size: 1.5rem;
   }
+}
+
+.modal {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  border: solid 10px #e36652;
+  background-color: #ecf5f4;
+  top: 25%;
+  left: 25%;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
+}
+
+.modal:hover {
+  transform: scale(1);
 }
 
 /* ---------------------------------------------------------

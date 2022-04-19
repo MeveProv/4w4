@@ -66,9 +66,13 @@
 
 
 </footer>
+<div class="modal">
+    Ceci est un test qui vérifie le fonctionnement d'ine boite modale
+</div>
+</body>
 <?php
     wp_footer();
 ?>
-</body>
+
 
 </html>

@@ -1,0 +1,15 @@
+.modal{
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    border: solid 10px rgb(227, 102, 82);
+    background-color: rgb(236, 245, 244);
+    top: 25%;
+    left: 25%;
+    transform: scale(.1);
+    transition: all 1s ease-in-out;
+    &:hover{
+        transform: scale(1);
+    }
+}
+
