@@ -1405,7 +1405,7 @@ div.animation__bloc:nth-of-type(5) {
   color: #c089f7;
 }
 
-.modal {
+.boite__modale {
   position: fixed;
   width: 50%;
   height: 50%;
@@ -1413,11 +1413,12 @@ div.animation__bloc:nth-of-type(5) {
   background-color: #ecf5f4;
   top: 25%;
   left: 25%;
-  transform: scale(0.1);
+  transform: scale(0);
   transition: all 1s ease-in-out;
+  z-index: 3;
 }
 
-.modal:hover {
+.boite__modale__ouvrir {
   transform: scale(1);
 }
 

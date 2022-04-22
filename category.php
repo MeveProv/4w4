@@ -44,8 +44,9 @@ echo "<h2>" . $ma_categorie->name . "</h2>";
                         //$descCours = get_the_excerpt();
                         ///
                         //creation du bouton pour lire la suite 
-                        $descCours = wp_trim_words(get_the_content(),15,'<button class="cours__desc__suite" href=#> Lire la suite </button>');
+                        $descCours = get_the_content();
                         ?>
+                        <code class="cours__desc__complet" style= "display:none"><?= $descCours; ?></code>
                         
                         <?php the_post_thumbnail("thumbnail");?>
                         <h3 class="cours__titre">
@@ -56,7 +57,7 @@ echo "<h2>" . $ma_categorie->name . "</h2>";
                        
                         <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
                         <p class="cours__sigle"><?= $sigleCours; ?> </p>
-                        <p class="cours__desc"> <?= $descCours; ?></p>
+                        <p class="cours__desc"> <?= wp_trim_words ($descCours,15,'<button class="cours__desc__suite" href=#> Lire la suite </button>'); ?></p>
                         <!--<p class="cours__dep"> //////// AJOUTER PHP C)MME EN HAUT $departement; </p>-->
                         <p class="cours__dep"> <?= $departement; ?></p>
                     </article>
