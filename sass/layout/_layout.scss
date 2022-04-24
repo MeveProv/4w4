@@ -10,7 +10,7 @@
 
 .home::after {
     content: "";
-    position: absolute;
+   
     width: 100%;
     height: 100%;
     top: 0;
@@ -20,7 +20,7 @@
     @media screen and (min-width : $largeur__media--tablette) {
     background-color: rgb(13, 14, 13);
     z-index: -1;
-
+    position: absolute;
     clip-path: polygon(85% 0, 100% 0, 100% 100%, 19% 100%);
     }
 }
