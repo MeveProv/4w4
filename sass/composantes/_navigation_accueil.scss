@@ -83,7 +83,8 @@
                 text-shadow: 0px 0px 0px black;
                 background-color: rgba(121, 244, 229, 0.504);
                 //background-color:  rgba(161, 244, 154, 0.361);
-               
+              
+                     
                 display: flex;
 
                 transition: 0.15s;
@@ -122,6 +123,10 @@
                     color: cyan;
                     border: solid 1px white;
                     transform: scale(1) translateX(0px);
+                   
+                       
+                
+                    
                    justify-content: flex-start;
                     .iconeMenuAccueil {
                         color: aliceblue;
@@ -149,6 +154,7 @@
                             animation-timing-function: ease-in;
                         }
                     }
+                    
                 }
             }
         }
