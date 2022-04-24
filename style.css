@@ -788,7 +788,12 @@ svg:hover {
 }
 
 #chk-burger:checked ~ .menu-principal-container {
-  display: block;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-principal-container {
+  transition: 2s all ease;
 }
 
 .menu {
@@ -800,9 +805,15 @@ svg:hover {
 
 .menu-item {
   padding: 10px;
-  padding-top: 35px;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-item {
+    padding-top: 35px;
+    flex-direction: column;
+  }
 }
 
 .menu-item a {
@@ -832,8 +843,13 @@ svg:hover {
   color: #798aec;
   box-shadow: rgba(161, 244, 154, 0.863) 1px -1px 10px 2px;
   box-shadow: #b196e4 1px -1px 10px 2px;
-  transform: scale(1.1) translateX(15px);
   border: solid 0.5px #c69cee;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-item a:hover {
+    transform: scale(1.1) translateX(15px);
+  }
 }
 
 .menu-item a:hover svg {
@@ -1055,8 +1071,6 @@ h4 {
   padding-bottom: 50px;
   text-shadow: 1px 1px 20px #dbdada;
   letter-spacing: 0.2rem;
-  animation: anim_titre 2s forwards ease-in-out;
-  animation-delay: 6s;
 }
 
 div.animation__bloc:hover {
@@ -1361,7 +1375,6 @@ div.animation__bloc:nth-of-type(5) {
     border-radius: 50%;
     color: cyan;
     border: solid 1px white;
-    transform: scale(1) translateX(0px);
   }
   .menu-accueil-container .menu .menu-item:hover a .iconeMenuAccueil {
     color: aliceblue;
@@ -1378,8 +1391,13 @@ div.animation__bloc:nth-of-type(5) {
 }
 
 .menu-evenement-container .menu {
-  display: flex;
   margin: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-evenement-container .menu {
+    display: flex;
+  }
 }
 
 .menu-evenement-container .menu .menu-item {
@@ -1394,6 +1412,7 @@ div.animation__bloc:nth-of-type(5) {
   text-shadow: 0px 0px 0px black;
   background-color: rgba(121, 244, 229, 0.504);
   height: 150px;
+  justify-content: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -1418,16 +1437,16 @@ div.animation__bloc:nth-of-type(5) {
   background-color: rgba(161, 250, 240, 0.759);
   background-color: #1f1f1f;
   border: solid 1px white;
-  transform: translateY(-20px);
   box-shadow: #efedf3 1px -1px 10px 2px;
   border-radius: 1%;
   color: aliceblue;
-  flex-direction: column-reverse;
-  justify-content: space-around;
 }
 
 @media screen and (min-width: 800px) {
   .menu-evenement-container .menu .menu-item:hover a {
+    transform: translateY(-20px);
+    flex-direction: column-reverse;
+    justify-content: space-around;
     font-size: 1.5rem;
   }
 }

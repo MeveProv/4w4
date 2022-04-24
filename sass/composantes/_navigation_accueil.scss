@@ -140,7 +140,7 @@
                         border-radius: 50%;
                         color: cyan;
                         border: solid 1px white;
-                        transform: scale(1) translateX(0px);
+                       
                         .iconeMenuAccueil {
                             color: aliceblue;
                             box-shadow: rgb(222, 196, 249) 15px 0px 35px 0px;
@@ -164,7 +164,9 @@
     flex-direction: row;
 
     .menu {
+        @media screen and (min-width : $largeur__media--tablette) {
         display: flex;
+        }
         //flex-direction: column;
         margin: 20px;
 
@@ -184,6 +186,8 @@
                 background-color: rgba(121, 244, 229, 0.504);
                // flex-wrap: wrap;
                 height: 150px;
+                justify-content: center;
+              
 
                 @media screen and (min-width : $largeur__media--tablette) {
                     height: 100px;
@@ -206,21 +210,23 @@
             
             { 
                 a {
-                    @media screen and (min-width : $largeur__media--tablette) {
-                        font-size: 1.5rem;
-                      
-                      
-                    }
+                   
                     background-color: rgba(161, 250, 240, 0.759);
                     background-color: rgb(31, 31, 31);
                     border: solid 1px white;
+                    @media screen and (min-width : $largeur__media--tablette) {
                     transform: translateY(-20px);
+                    flex-direction: column-reverse;
+                    justify-content: space-around;
+                    font-size: 1.5rem;
+                    }
+                    
                     box-shadow: rgb(239, 237, 243) 1px -1px 10px 2px;
                     border-radius: 1%;
                     color: aliceblue;
                  //height: 250px;
-                 flex-direction: column-reverse;
-                 justify-content: space-around;
+            
+                 
                 
                  
                 }
