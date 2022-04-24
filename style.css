@@ -369,6 +369,10 @@ html {
   outline: 0;
 }
 
+.site__footer a :hover {
+  transform: scale(1) translateX(0px);
+}
+
 h1 {
   font-size: clamp(2rem, 4vw, 5rem);
 }
@@ -481,11 +485,10 @@ COMPOSANTES
 @media screen and (min-width: 800px) {
   .formation__cours:hover {
     background-color: white;
-    transform: scale(1.3);
     box-shadow: #f4f4f6 3px 1px 40px;
     background-color: #242323;
     border: solid 3px #e7e7e9;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   .formation__cours:hover .cours__desc {
     color: #fafafa;
@@ -901,6 +904,10 @@ svg:hover {
   justify-content: center;
 }
 
+.site__footer__menu__ul:hover {
+  transform: scale(1) translateX(0px);
+}
+
 .site__footer__menu__ul .menu-item {
   margin: 10px 5px;
 }
@@ -917,6 +924,9 @@ svg:hover {
   .site__footer__menu__ul .menu-item a {
     height: 30px;
     width: 130px;
+  }
+  .site__footer__menu__ul .menu-item a:hover {
+    transform: scale(1) translateX(0px);
   }
 }
 
@@ -991,6 +1001,10 @@ svg:hover {
   .wp-block-gallery {
     width: 100%;
   }
+}
+
+.site__footer__lien a:hover {
+  transform: scale(1) translateX(0px);
 }
 
 .blocks-gallery-grid {
@@ -1232,6 +1246,7 @@ div.animation__bloc:nth-of-type(5) {
 .menu-categorie_cours-container .menu:hover a {
   color: #6fe8f1;
   box-shadow: #222222 1px -1px 10px 3px;
+  transform: scale(1.1) translateX(0px);
 }
 
 .menu-categorie_cours-container .menu .current-menu-item {
@@ -1409,7 +1424,7 @@ div.animation__bloc:nth-of-type(5) {
   position: fixed;
   width: 50%;
   height: 50%;
-  border: solid 10px #e36652;
+  border: solid 10px #1b1b1b;
   background-color: #ecf5f4;
   top: 25%;
   left: 25%;

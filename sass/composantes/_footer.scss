@@ -13,17 +13,22 @@
   
   
 &__menu {
+  
    
 &__ul {
      
       display: flex;
       list-style-type: none;
       justify-content: center;
+      &:hover{
+        transform: scale(1) translateX(0px);
+   
+      }
 
       .menu-item {
        
         margin: 10px 5px;
-
+       
         a {
           
           display: flex;
@@ -36,7 +41,10 @@
           @media screen and (min-width : $largeur__media--tablette) {
             height: 30px;
             width: 130px;
-
+            &:hover{
+              transform: scale(1) translateX(0px);
+         
+            }
 
 
 
@@ -52,6 +60,7 @@
             box-shadow: rgb(177, 150, 228) 1px 1px 20px 2px;
             svg {
               color: aliceblue;
+              
             }
           }
 
@@ -136,3 +145,8 @@
     width: 100%;
   }
 }
+.site__footer__lien a:hover{
+  transform: scale(1) translateX(0px);
+}
+
+
