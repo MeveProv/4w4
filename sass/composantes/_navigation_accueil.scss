@@ -90,8 +90,7 @@
                 align-items: center;
                 width: 200px;
                 //width: 250px;
-
-
+                
                 @media screen and (min-width : $largeur__media--tablette) {
                     height: 200px;
                     //height: 250px;
@@ -115,6 +114,23 @@
 
 
             }
+            &:hover {
+                a {
+                    background-color: rgba(16, 16, 16, 0.787);
+                    box-shadow: rgb(239, 237, 243) 1px -1px 10px 2px;
+                  flex-grow: 1.2;
+                    color: cyan;
+                    border: solid 1px white;
+                    transform: scale(1) translateX(0px);
+                   justify-content: flex-start;
+                    .iconeMenuAccueil {
+                        color: aliceblue;
+                        box-shadow: rgb(222, 196, 249) 15px 0px 35px 0px;
+                        animation-name: animIcon;
+                        animation-duration: 0.5s;
+                        animation-timing-function: ease-in;
+                    }
+                }}
 
             @media screen and (min-width : $largeur__media--tablette) {
                 &:hover {

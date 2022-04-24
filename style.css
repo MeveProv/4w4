@@ -1336,6 +1336,24 @@ div.animation__bloc:nth-of-type(5) {
   margin-right: 5px;
 }
 
+.menu-accueil-container .menu .menu-item:hover a {
+  background-color: rgba(16, 16, 16, 0.787);
+  box-shadow: #efedf3 1px -1px 10px 2px;
+  flex-grow: 1.2;
+  color: cyan;
+  border: solid 1px white;
+  transform: scale(1) translateX(0px);
+  justify-content: flex-start;
+}
+
+.menu-accueil-container .menu .menu-item:hover a .iconeMenuAccueil {
+  color: aliceblue;
+  box-shadow: #dec4f9 15px 0px 35px 0px;
+  animation-name: animIcon;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+}
+
 @media screen and (min-width: 800px) {
   .menu-accueil-container .menu .menu-item:hover a {
     background-color: rgba(16, 16, 16, 0.787);
