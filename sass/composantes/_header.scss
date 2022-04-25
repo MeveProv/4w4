@@ -2,24 +2,26 @@
 .site__header {
   background-color: $color__background-header;
   color: $color__font-header;
+
   @media screen and (min-width : $largeur__media--tablette) {
-  padding-left: 40px;
-  background-image: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-1');
-  background-repeat: no-repeat;
-  
-  background-size: 700px 300px;
+    padding-left: 40px;
+    background-image: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-1');
+    background-repeat: no-repeat;
+
+    background-size: 700px 300px;
 
   }
-  box-shadow: rgb(241, 241, 241) 1px -1px 20px;//blanc cest meiux 
-  //border: 1px solid white;
+
+  box-shadow: rgb(241, 241, 241) 1px -1px 20px; //blanc cest meiux 
   
-  
-  
+
+
+
   .header__titre {
     font-size: 3em;
     font-family: $font__titre;
     padding-left: 10px;
-   
+
 
   }
 
@@ -27,8 +29,9 @@
 
     font-size: clamp(1rem, 2vw, 3rem);
     font-family: $font__main;
+
     @media screen and (min-width : $largeur__media--tablette) {
-    padding-left: 30px; ///90px si cadrer
+      padding-left: 30px; ///90px si cadrer
     }
   }
 }
@@ -38,7 +41,7 @@
 svg {
   display: flex;
   color: $color__background-footer;
- 
+
 
 
 
@@ -50,9 +53,9 @@ svg {
 .iconeMenu {
   transform: rotateZ(180deg);
   margin-right: 5px;
-  
-  
-  
+
+
+
 }
 
 svg:hover {
@@ -66,8 +69,8 @@ svg:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
-/////Ajustement pour format tablette//////
+
+  /////Ajustement pour format tablette//////
   @media screen and (min-width : $largeur__media--tablette) {
     flex-direction: row;
 
@@ -96,6 +99,7 @@ svg:hover {
   }
 
 }
+
 /////section utile dans le header//////
 .utile {
   display: flex;
@@ -151,5 +155,5 @@ svg:hover {
 
 .site__header a:hover {
   color: rgb(137, 222, 129);
-  
+
 }

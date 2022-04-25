@@ -7,43 +7,45 @@
   flex-direction: column;
   background-image: url('https://s2.svgbox.net/loaders.svg?ic=puff');
   background-image: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-4');
-  
-  
-  
-  
-  
-&__menu {
-  
-   
-&__ul {
-     
+
+
+
+
+
+  &__menu {
+
+
+    &__ul {
+
       display: flex;
       list-style-type: none;
       justify-content: center;
-      &:hover{
+
+      &:hover {
         transform: scale(1) translateX(0px);
-   
+
       }
 
       .menu-item {
-       
+
         margin: 10px 5px;
-       
+
         a {
-          
+
           display: flex;
           align-items: center;
-          //height: 50px;
+        
           height: 30px;
-            width: 130px;
-         
+          width: 130px;
+
           /////Ajustement format tablette//////
           @media screen and (min-width : $largeur__media--tablette) {
             height: 30px;
             width: 130px;
-            &:hover{
+
+            &:hover {
               transform: scale(1) translateX(0px);
-         
+
             }
 
 
@@ -56,16 +58,17 @@
 
           &:hover {
             transform: scale(1) translateX(0px);
-            box-shadow: rgb(177, 149, 228) 0px -1px 10px;// cest ici
+            box-shadow: rgb(177, 149, 228) 0px -1px 10px; // cest ici
             box-shadow: rgb(177, 150, 228) 1px 1px 20px 2px;
+
             svg {
               color: aliceblue;
-              
+
             }
           }
 
           svg {
-           
+
             transform: rotateZ(0deg);
             padding-right: 5px;
             box-shadow: rgba(177, 150, 228, 0) 0px -1px 10px;
@@ -76,6 +79,7 @@
     }
   }
 }
+
 /////Section footer pour texte//////
 .footer__titre {
   color: hsl(231, 75%, 70%);
@@ -95,13 +99,14 @@
   text-align: center;
 
 }
+
 /////Les divisions footer//////
 .site__footer__colonne {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-around;
   padding: 20px;
-  
+
   @media screen and (min-width : $largeur__media--tablette) {
     flex-direction: row;
   }
@@ -117,6 +122,7 @@
   font-size: 1rem;
 
 }
+
 /////zone recherche reservé footer //////
 .footer__recherche {
   padding-left: 40px;
@@ -130,23 +136,23 @@
 
 
 }
-.site__footer__adresse{
- 
+
+.site__footer__adresse {
+
   //padding-left: 100px;
   //width: 400px;
-  
+
 }
 
-.wp-block-gallery{
+.wp-block-gallery {
   width: 40%;
   margin-top: 50px;
-  
+
   @media screen and (min-width : $largeur__media--tablette) {
     width: 100%;
   }
 }
-.site__footer__lien a:hover{
+
+.site__footer__lien a:hover {
   transform: scale(1) translateX(0px);
 }
-
-

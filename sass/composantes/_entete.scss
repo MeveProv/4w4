@@ -2,6 +2,7 @@
 .blocks-gallery-grid {
   display: none;
 }
+
 /////  Animations réservé pour format tablette//////
 @media screen and (min-width : $largeur__media--tablette) {
 
@@ -14,6 +15,7 @@
 
   }
 }
+
 /////contenu de la front page//////
 .wp-image-217 {
   opacity: 1;
@@ -52,8 +54,7 @@ h4 {
   padding-bottom: 50px;
   text-shadow: 1px 1px 20px rgb(219, 218, 218);
   letter-spacing: 0.2rem;
-  //animation: anim_titre 2s forwards ease-in-out;
-  //animation-delay: 6s;
+ 
 }
 
 /////section pour les animations avec les div//////
@@ -62,21 +63,22 @@ div.animation__bloc:hover {
   background-color: transparent;
   border: 1px solid white;
   color: azure;
- 
+
 }
+
 div.animation__bloc:nth-of-type(1):hover {
   background-color: transparent;
   border: 1px solid white;
   color: azure;
- transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 div.animation__bloc:nth-of-type(1) {
 
   animation: anim_bloc 1s 1s forwards ease-in-out;
   animation-delay: 1s;
-  
-    //background-size: 50px 50px;
+
+  //background-size: 50px 50px;
 }
 
 div.animation__bloc:nth-of-type(2) {
@@ -100,9 +102,9 @@ div.animation__bloc:nth-of-type(4) {
 div.animation__bloc:nth-of-type(5) {
 
   animation: anim_bloc 1s 1s forwards ease-in-out;
-  
-animation-delay: 5s;
- 
+
+  animation-delay: 5s;
+
 }
 
 .animation {
@@ -125,7 +127,7 @@ animation-delay: 5s;
     box-shadow: 1px 1px 20px 5px rgb(219, 218, 218);
     background-image: url('https://s2.svgbox.net/loaders.svg?ic=circles');
     background-image: url('https://s2.svgbox.net/loaders.svg?ic=spinning-circles');
-   
+
 
 
     @media screen and (min-width : $largeur__media--tablette) {
@@ -133,26 +135,31 @@ animation-delay: 5s;
       height: 100px;
     }
   }
-/////Animation//////
+
+  /////Animation//////
 
   &__bloc:nth-of-type(1) {
     background-image: url('https://s2.svgbox.net/loaders.svg?ic=grid');
     background-size: 100px 100px;
-   
+
   }
+
   &__bloc:nth-of-type(2) {
     background-image: url('https://s2.svgbox.net/loaders.svg?ic=bars');
     background-size: 90px 90px;
   }
+
   &__bloc:nth-of-type(3) {
     background-image: url('https://s2.svgbox.net/loaders.svg?ic=circles');
     background-size: 100px 100px;
   }
+
   &__bloc:nth-of-type(4) {
     background-image: url('https://s2.svgbox.net/loaders.svg?ic=audio');
     background-size: 100px 100px;
-   
+
   }
+
   &__bloc:nth-of-type(5) {
     background-image: url('https://s2.svgbox.net/loaders.svg?ic=puff');
     background-size: 100px 100px;
@@ -160,17 +167,17 @@ animation-delay: 5s;
 
   @keyframes anim_bloc {
     0% {
-      transform: translateY(-100vh) ;
+      transform: translateY(-100vh);
     }
 
     75% {
       transform: translateY(500px) rotate(360deg);
-width: 0px;
+      width: 0px;
     }
 
     100% {
       transform: translateY(10px) rotate(360deg) scale(0.8);
-      
+
     }
 
   }
@@ -212,8 +219,8 @@ width: 0px;
   }
 
   ///////////////////////Essaie anim
-  
-  
+
+
 
 
 

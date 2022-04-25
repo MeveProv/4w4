@@ -2,11 +2,13 @@
 .principal {
     margin: 40px;
 
-   background-color:#5e5c5cd6;
-   background-color:rgba(126, 126, 126, 0.84);
-   @media screen and (min-width : $largeur__media--tablette) {
-    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=cube');
-   }
+    background-color: #5e5c5cd6;
+    background-color: rgba(126, 126, 126, 0.84);
+
+    @media screen and (min-width : $largeur__media--tablette) {
+        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=cube');
+    }
+
     box-shadow: #000000ec 1px 1px 30px 3px;
     border-radius: 25px;
     display: flex;
@@ -14,19 +16,21 @@
     align-items: center;
     background-image: url('https://s2.svgbox.net/heropatterns.svg?ic=lips');
     background-image: url('https://s2.svgbox.net/heropatterns.svg?ic=topography');
+
     
-    //border: 2px solid white;
-///// pour format tablette//////
-@media screen and (min-width : $largeur__media--tablette) {
+    ///// pour format tablette//////
+    @media screen and (min-width : $largeur__media--tablette) {
         flex-direction: column;
         padding: 10px 15px;
-       
- }
- .cours__desc{
-    //color: rgb(122, 207, 207);
-    color: rgb(250, 250, 250);
- }
+
+    }
+
+    .cours__desc {
+        //color: rgb(122, 207, 207);
+        color: rgb(250, 250, 250);
+    }
 }
+
 ///// section pour les formations du cour//////
 .formation {
     display: flex;
@@ -36,7 +40,7 @@
     &__titre {
         font-size: 2rem;
         color: white;
-        //margin: 10px 0px;
+      
         font-family: $font__titre;
         text-align: center;
     }
@@ -53,50 +57,52 @@
         box-shadow: rgb(177, 150, 228) 1px -1px 10px;
         border: solid 3px hsl(231, 75%, 70%);
         transition: 0.8s;
-       
+
         margin: 20px;
         display: flex;
         flex-direction: column;
         width: 100%;
         display: flex;
-               flex-direction: column;
-               //justify-content: flex-start;
-               @media screen and (min-width : $largeur__media--tablette) {  
-               align-items: center;
-               background-color: $color__background-cours;
-               }
+        flex-direction: column;
+
+        //justify-content: flex-start;
+        @media screen and (min-width : $largeur__media--tablette) {
+            align-items: center;
+            background-color: $color__background-cours;
+        }
 
 
 
-///// section pour les formations du cour version tablette avec hover//////
+        ///// section pour les formations du cour version tablette avec hover//////
         @media screen and (min-width : $largeur__media--tablette) {
             &:hover {
                 background-color: rgb(255, 255, 255);
                 //transform: scale(1.3);
-               
+
                 box-shadow: hsl(240, 9%, 96%) 3px 1px 40px;
                 background-color: rgb(36, 35, 35);
                 border: solid 3px hsl(240, 6%, 91%);
                 transform: scale(1.1);
-              
 
-                
-                
+
+
+
                 .cours__desc {
                     color: rgb(250, 250, 250);
                     color: rgb(111, 224, 224);
                 }
-                .cours__nbre-heure{
-                    color: rgb(250, 250, 250); 
+
+                .cours__nbre-heure {
+                    color: rgb(250, 250, 250);
                 }
-                p{
-                 
+
+                p {}
+
+                img {
+                    opacity: 0.8;
                 }
-                img{
-                   opacity: 0.8;
-                }
-                
-                
+
+
 
             }
         }
@@ -112,6 +118,7 @@
         padding: 10px;
     }
 }
+
 ///// section pour les textes de chaque cours//////
 .cours__titre {
     font-size: 1.7rem;
@@ -144,39 +151,47 @@
     padding-left: 20px;
     padding-bottom: 10px;
 }
+
 a {
-	color: #515c96;
-	text-decoration: none;
-   
+    color: #515c96;
+    text-decoration: none;
+
 }
-a:hover{
-	color: rgb(253, 253, 253);
+
+a:hover {
+    color: rgb(253, 253, 253);
 }
-.web{
+
+.web {
     background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe');
     background-size: 50px 50px;
 
-   
-   
+
+
 }
-.video{
+
+.video {
     background-image: url('https://s2.svgbox.net/materialui.svg?ic=videocam');
     background-size: 400px 400px;
 }
-.utilitaire{
+
+.utilitaire {
     background-image: url('https://s2.svgbox.net/social.svg?ic=angellist');
     background-size: 400px 400px;
 }
-.jeu{
+
+.jeu {
     background-image: url('https://s2.svgbox.net/materialui.svg?ic=videogame_asset');
     background-size: 400px 400px;
 }
-.design{
+
+.design {
     background-image: url('https://s2.svgbox.net/octicons.svg?ic=pencil');
     background-size: 400px 400px;
-    
+
 }
-.creation-3d{
+
+.creation-3d {
     background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=cube');
     background-size: 400px 400px;
 }
@@ -184,68 +199,79 @@ a:hover{
 //icon ans formation
 
 @media screen and (min-width : $largeur__media--tablette) {
-.web{
-    background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe');
-    background-size: 50px 50px;
+    .web {
+        background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe');
+        background-size: 50px 50px;
 
- //icon ans formationgit add  
-   
-}
-.video{
-    background-image: url('https://s2.svgbox.net/materialui.svg?ic=videocam');
-    background-size: 50px 50px;
-}
-.utilitaire{
-    background-image: url('https://s2.svgbox.net/social.svg?ic=angellist');
-    background-size: 50px 50px;
-}
-.jeu{
-    background-image: url('https://s2.svgbox.net/materialui.svg?ic=videogame_asset');
-    background-size: 50px 50px;
-}
-.design{
-    background-image: url('https://s2.svgbox.net/octicons.svg?ic=pencil');
-    background-size: 50px 50px;
-    
-}
-.creation-3d{
-    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=cube');
-    background-size: 50px 50px;
+        //icon ans formationgit add  
+
+    }
+
+    .video {
+        background-image: url('https://s2.svgbox.net/materialui.svg?ic=videocam');
+        background-size: 50px 50px;
+    }
+
+    .utilitaire {
+        background-image: url('https://s2.svgbox.net/social.svg?ic=angellist');
+        background-size: 50px 50px;
+    }
+
+    .jeu {
+        background-image: url('https://s2.svgbox.net/materialui.svg?ic=videogame_asset');
+        background-size: 50px 50px;
+    }
+
+    .design {
+        background-image: url('https://s2.svgbox.net/octicons.svg?ic=pencil');
+        background-size: 50px 50px;
+
+    }
+
+    .creation-3d {
+        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=cube');
+        background-size: 50px 50px;
+    }
+
+    .creation-3d:hover {
+        background-size: 430px 430px;
+    }
+
+    .design:hover {
+
+        background-size: 400px 400px;
+    }
+
+    .web:hover {
+
+        background-size: 400px 400px;
+
+    }
+
+    .video:hover {
+        background-size: 400px 400px;
+    }
+
+    .jeu:hover {
+        background-size: 400px 400px;
+    }
+
+    .utilitaire:hover {
+        background-size: 400px 400px;
+    }
+
+
 }
 
-.creation-3d:hover{
-    background-size: 430px 430px; 
-}
-.design:hover{
-   
-    background-size: 400px 400px; 
-}
-.web:hover{
-   
-    background-size: 400px 400px; 
-    
-}
-.video:hover{
-    background-size: 400px 400px; 
-}
-.jeu:hover{
-    background-size: 400px 400px; 
-}
-.utilitaire:hover{
-    background-size: 400px 400px; 
-}
-
-
-}
 //////////////page événement/////////////
-h5{
+h5 {
     color: #f7f8f8;
     font-size: clamp(1rem, 3vw, 3rem);
     z-index: 3;
     padding-top: 50px;
     padding-bottom: 50px;
     text-shadow: 1px 1px 20px #dbdada;
-    letter-spacing: 0.2rem; 
+    letter-spacing: 0.2rem;
     //text-align: center;
 }
 
@@ -254,10 +280,11 @@ h5{
 
 
 /////ajout siteground
-p.cours__dep{
+p.cours__dep {
     color: #8d96c2;
-  }
-  ///effacer les description
-  span.menu-item-description{
+}
+
+///effacer les description
+span.menu-item-description {
     display: none;
-  }
+}
