@@ -18,11 +18,11 @@
 }
 
 #chk-burger:checked~.menu-principal-container {
-   display: flex;
-   justify-content: center;
- 
+    display: flex;
+    justify-content: center;
 
-   
+
+
 }
 
 .menu-principal-container {
@@ -34,31 +34,33 @@
     text-align: center;
     margin: 1px;
     padding: 1px;
-   
-   
+
+
 
 
 }
 
 
 .menu-item {
-   
+
     padding: 10px;
+
     @media screen and (min-width : $largeur__media--tablette) {
-    padding-top: 35px;
-    flex-direction: column;
+        padding-top: 35px;
+        flex-direction: column;
     }
+
     display: flex;
     flex-direction: column;
 
-    
+
 
 
     a {
         text-decoration: none;
         display: flex;
         text-shadow: 1px 2px 5px black;
-       
+
         justify-content: flex-start; //ici cest enlime item menu
 
         height: 50px;
@@ -68,10 +70,10 @@
         color: aqua;
         background-color: rgb(78, 78, 78);
         transition: 0.4s ease-in-out;
-        
+
         font-size: 1.2rem;
         box-shadow: rgb(34, 34, 34) 1px -1px 10px 3px;
-      
+
         padding-left: 20px;
 
     }
@@ -88,20 +90,22 @@
         color: hsl(231, 75%, 70%);
         box-shadow: rgba(161, 244, 154, 0.863) 1px -1px 10px 2px;
         box-shadow: rgb(177, 150, 228) 1px -1px 10px 2px;
+
         @media screen and (min-width : $largeur__media--tablette) {
-        transform: scale(1.1) translateX(15px);
+            transform: scale(1.1) translateX(15px);
         }
+
         border: solid 0.5px rgb(198, 156, 238);
 
         svg {
             color: whitesmoke;
-           
+
             box-shadow: cyan 6px 0px 5px -1px;
             border-radius: 50%;
             height: 38px;
             width: 38px;
 
-           
+
             animation: animMenu 0.5s;
             animation-direction: alternate;
             animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55) ease-in-out;
