@@ -919,8 +919,6 @@ svg:hover {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  background-image: url("https://s2.svgbox.net/loaders.svg?ic=puff");
-  background-image: url("https://s2.svgbox.net/pen-brushes.svg?ic=brush-4");
 }
 
 .site__footer__menu__ul {
@@ -1481,6 +1479,10 @@ div.animation__bloc:nth-of-type(5) {
 
 .boite__modale__ouvrir {
   transform: scale(1);
+}
+
+.boite__modale__texte {
+  text-align: center;
 }
 
 /* ---------------------------------------------------------

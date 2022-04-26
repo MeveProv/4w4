@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<main class="principal">
+<main class="principal" style="background-color: <?= get_theme_mod('couleur_background_body');?>;">
     <h1></h1>
     <?php wp_nav_menu(array(
         "menu" => "categorie_cours",
