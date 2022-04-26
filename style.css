@@ -641,6 +641,19 @@ span.menu-item-description {
   display: none;
 }
 
+.cours__sigle {
+  text-align: center;
+}
+
+.cours__nbre-heure {
+  text-align: center;
+  color: white;
+}
+
+.cours__dep {
+  text-align: center;
+}
+
 .site__header {
   background-color: #bbecee00;
   color: #f1eeee;
