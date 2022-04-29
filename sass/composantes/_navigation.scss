@@ -1,8 +1,8 @@
 /////Le menu de navigation//////
 #burger {
     position: absolute;
-    transition: transform .3s;
-    transform: rotate(0);
+    //transition: transform .3s;
+    //transform: rotate(0);
 }
 
 #chk-burger {
@@ -10,11 +10,12 @@
 }
 
 #chk-burger:checked~#burger {
-    transform: rotate(90deg);
+   // transform: rotate(90deg);
 }
 
 .menu-principal-container {
     display: none;
+    
 }
 
 #chk-burger:checked~.menu-principal-container {
@@ -34,11 +35,12 @@
     text-align: center;
     margin: 1px;
     padding: 1px;
-
+    
 
 
 
 }
+
 
 
 .menu-item {
