@@ -30,7 +30,7 @@ $manager->add_setting('couleur_background_body',
                       ["default"=> "#fff",
                       "sanitize_callback"=> "sanitize_hex_color"
                       ]);
-                    /**deuxieme */
+                    /**deuxieme propriete nouvelle dans cuztumize*/
                       $manager->add_setting('couleur_background_footer',
                       ["default"=> "#fff",
                       "sanitize_callback"=> "sanitize_hex_color"
@@ -48,7 +48,7 @@ $manager->add_control(new WP_Customize_Color_Control($manager,"couleur_backgroun
     "label" =>"Couleur background header"
     
 ]));
-/**deuxieme */
+/**deuxieme propriete a modifier voir categoryphp template et footer*/
 $manager->add_control(new WP_Customize_Color_Control($manager,"couleur_background_footer",[
     "section"=>"section_modifier_background_body",
     "label" =>"Couleur background du footer"

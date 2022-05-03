@@ -1030,7 +1030,6 @@ svg:hover {
 
 @media screen and (min-width: 800px) {
   .blocks-gallery-grid {
-    width: 50%;
     padding-top: 40px;
     opacity: 0.8;
     display: block;
@@ -1523,6 +1522,22 @@ div.animation__bloc:nth-of-type(5) {
 
 #chk-burger:checked ~ #burger .burger__ligne:nth-of-type(2) {
   background-color: rgba(0, 255, 255, 0);
+}
+
+/**
+galerie gutenberg de la page daccuiel*/
+.galerie {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .galerie {
+    width: 75%;
+  }
+}
+
+.principal {
+  align-items: center;
 }
 
 /* ---------------------------------------------------------

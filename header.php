@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <?php wp_head(); ?>
+    <style>
+        /**mettre les style e cuztomizer backcground color qui change celui dans categoryphp et footerphp */
+    </style>
 </head>
 <body  <?php body_class("site"); ?> >
 <header class="site__header"   >
