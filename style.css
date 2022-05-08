@@ -493,9 +493,6 @@ COMPOSANTES
   .formation__cours:hover .cours__nbre-heure {
     color: #fafafa;
   }
-  .formation__cours:hover img {
-    opacity: 0.8;
-  }
 }
 
 @media screen and (min-width: 800px) {
@@ -654,6 +651,19 @@ span.menu-item-description {
   text-align: center;
 }
 
+button.cours__desc__suite {
+  background-color: transparent;
+  border: none;
+  color: cyan;
+  padding-left: 20px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+button.cours__desc__suite:hover {
+  color: white;
+}
+
 .site__header {
   background-color: #bbecee00;
   color: #f1eeee;
@@ -672,7 +682,7 @@ span.menu-item-description {
 .site__header .header__titre {
   font-size: 3em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  padding-left: 10px;
+  padding-left: 100px;
 }
 
 .site__header .header__description {

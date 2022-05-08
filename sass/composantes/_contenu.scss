@@ -95,11 +95,11 @@
                 .cours__nbre-heure {
                     color: rgb(250, 250, 250);
                 }
-
+                
                 p {}
 
                 img {
-                    opacity: 0.8;
+                    //opacity: 0.8;
                 }
 
 
@@ -301,4 +301,16 @@ span.menu-item-description {
     text-align: center;
   }
    
+  button.cours__desc__suite{
+      background-color: transparent;
+      border: none;
+      color: cyan;
+      padding-left: 20px;
+      text-decoration: underline;
   
+      text-align: center;
+     
+  }
+  button.cours__desc__suite:hover{ 
+      color: white;
+  }

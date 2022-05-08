@@ -17,7 +17,7 @@ function cidw_4w4_enqueue(){
     wp_enqueue_script('cidw-4w4-js-caroussel',
     get_template_directory_uri() . '/javascript/caroussel.js',
     array(),
-    filemtime(get_template_directory() . '/javascript/carrousel.js'),
+    filemtime(get_template_directory() . '/javascript/caroussel.js'),
    true );
    
    if(is_category('cours')){
