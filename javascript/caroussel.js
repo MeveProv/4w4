@@ -7,10 +7,11 @@
     console.log(galerie__img.length);
     let elmImg = document.createElement('img');
     boite__caroussel.append(elmImg);
-
+let index = 0;
     
     for (const img of galerie__img) {
         let bouton = document.createElement('button')
+        bouton.dataset.index = index++
         boite__caroussel__navigation.append(bouton)
         console.log(this.tagName);
         img.addEventListener('mousedown', function () {
