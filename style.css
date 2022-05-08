@@ -1458,7 +1458,8 @@ div.animation__bloc:nth-of-type(5) {
   color: #c089f7;
 }
 
-.boite__modale, .boite__caroussel {
+.boite__modale,
+.boite__caroussel {
   position: fixed;
   width: 50%;
   height: 50%;
@@ -1475,13 +1476,15 @@ div.animation__bloc:nth-of-type(5) {
 }
 
 @media screen and (min-width: 800px) {
-  .boite__modale, .boite__caroussel {
+  .boite__modale,
+  .boite__caroussel {
     display: flex;
     justify-content: space-around;
   }
 }
 
-.boite__modale__ouvrir, .boite__caroussel__ouvrir {
+.boite__modale__ouvrir,
+.boite__caroussel__ouvrir {
   transform: scale(1);
 }
 
@@ -1590,7 +1593,7 @@ div.animation__bloc:nth-of-type(5) {
 }
 
 /**
-galerie gutenberg de la page daccuiel*/
+*/
 .galerie {
   width: 95%;
 }

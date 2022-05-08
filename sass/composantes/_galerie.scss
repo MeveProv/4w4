@@ -1,12 +1,12 @@
 /**
-galerie gutenberg de la page daccuiel*/
+*/
 
-.galerie{
-    
+.galerie {
+
     width: 95%;
-   
+
     @media screen and (min-width : $largeur__media--tablette) {
         width: 90%;
-        
+
     }
 }
