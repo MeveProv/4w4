@@ -3,9 +3,10 @@ galerie gutenberg de la page daccuiel*/
 
 .galerie{
     
-    width: 100%;
+    width: 95%;
+   
     @media screen and (min-width : $largeur__media--tablette) {
-        width: 75%;
+        width: 90%;
         
     }
 }

@@ -20,6 +20,14 @@ function cidw_4w4_enqueue(){
     filemtime(get_template_directory() . '/javascript/carrousel.js'),
    true );
    
+   if(is_category('cours')){
+       wp_enqueue_script('cidw-4w4-js-boite_modale');
+   }
+   if(is_front_page()){
+    wp_enqueue_script('cidw-4w4-js-caroussel');
+}
+   
+   
 
 
 }
