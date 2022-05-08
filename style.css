@@ -1549,6 +1549,7 @@ div.animation__bloc:nth-of-type(5) {
 
 .boite__caroussel__navigation button:focus {
   background-color: #191919;
+  border: 1px solid white;
 }
 
 .boite__caroussel__ferme {
