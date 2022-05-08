@@ -10,6 +10,8 @@
 
     
     for (const img of galerie__img) {
+        let bouton = document.createElement('button')
+        boite__caroussel__navigation.append(bouton)
         console.log(this.tagName);
         img.addEventListener('mousedown', function () {
           
