@@ -15,6 +15,7 @@
 
 .menu-principal-container {
     display: none;
+   
     
 }
 
@@ -116,17 +117,24 @@
 
 
 }
+.menu-principal-container {
+        //display: block;/////////////////////////////////
+        animation: anim_menu 2s forwards ease-in-out;
+    }
 
 /////Le menu de navigation pour le format tablette//////
 @media screen and (min-width : $largeur__media--tablette) {
     #burger {
-        display: none;
+       // display: none;
+       z-index: 4;////////////////////////////////
     }
 
     .menu-principal-container {
-        display: block;
+        //display: block;/////////////////////////////////
         animation: anim_menu 2s forwards ease-in-out;
+        
     }
+    
 
     @keyframes animMenu {
         from {
@@ -141,7 +149,12 @@
             color: cyan;
         }
 
-        50% {}
+        50% {
+            
+          
+               
+            
+        }
 
         75% {}
 
@@ -162,13 +175,15 @@
 
         50% {
             opacity: 0.5;
+          
 
         }
 
         100% {
             opacity: 1;
             transform: translateX(0px);
-
+            background-color: #ad9fd869;
+           
 
         }
     }

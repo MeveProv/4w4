@@ -866,12 +866,15 @@ svg:hover {
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55) ease-in-out;
 }
 
+.menu-principal-container {
+  animation: anim_menu 2s forwards ease-in-out;
+}
+
 @media screen and (min-width: 800px) {
   #burger {
-    display: none;
+    z-index: 4;
   }
   .menu-principal-container {
-    display: block;
     animation: anim_menu 2s forwards ease-in-out;
   }
   @keyframes animMenu {
@@ -903,6 +906,7 @@ svg:hover {
     100% {
       opacity: 1;
       transform: translateX(0px);
+      background-color: #ad9fd869;
     }
   }
 }
@@ -1463,12 +1467,23 @@ div.animation__bloc:nth-of-type(5) {
   width: 50%;
   height: 50%;
   border: solid 10px #1b1b1b;
+  border: solid 4px #fffdfd;
   background-color: #ecf5f4;
   top: 25%;
   left: 25%;
   transform: scale(0);
   transition: all 1s ease-in-out;
   z-index: 3;
+  box-shadow: #e6e4e4 1px 1px 20px 3px;
+  background-color: rgba(98, 186, 176, 0.856);
+}
+
+@media screen and (min-width: 800px) {
+  .boite__modale {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
 }
 
 .boite__modale__ouvrir {
@@ -1477,6 +1492,28 @@ div.animation__bloc:nth-of-type(5) {
 
 .boite__modale__texte {
   text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .boite__modale__texte {
+    font-size: 1.4rem;
+    padding: 30px;
+  }
+}
+
+.boite__modale__ferme {
+  width: 100%;
+  background-color: rgba(192, 231, 227, 0.963);
+  border: none;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.292);
+  box-shadow: #e6e4e4 1px 1px 20px 3px;
+}
+
+@media screen and (min-width: 800px) {
+  .boite__modale__ferme {
+    font-size: 2rem;
+  }
 }
 
 .burger {

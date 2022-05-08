@@ -3,14 +3,20 @@
     width: 50%;
     height: 50%;
     border: solid 10px rgb(27, 27, 27);
+    border: solid 4px rgb(255, 253, 253);
     background-color: rgb(236, 245, 244);
     top: 25%;
     left: 25%;
     transform: scale(0);
     transition: all 1s ease-in-out;
     z-index: 3;
-   
-
+    box-shadow: #e6e4e4 1px 1px 20px 3px;
+    background-color: rgba(98, 186, 176, 0.856);
+    @media screen and (min-width : $largeur__media--tablette) {
+display: flex;
+flex-direction: column-reverse;
+justify-content: space-around;
+    }
     &:hover {}
 
     &__ouvrir {
@@ -19,5 +25,19 @@
 }
 .boite__modale__texte{
   text-align: center;
-  
+  @media screen and (min-width : $largeur__media--tablette) {
+  font-size: 1.4rem;
+  padding: 30px;
+  }
+}
+.boite__modale__ferme{
+  @media screen and (min-width : $largeur__media--tablette) {
+  font-size: 2rem;
+  }
+ width: 100%;
+ background-color:  rgba(192, 231, 227, 0.963);
+ border: none;
+ color: white;
+ background-color:rgba(255, 255, 255, 0.292);
+ box-shadow: #e6e4e4 1px 1px 20px 3px;
 }
