@@ -69,7 +69,8 @@
     left: 0;
     position: absolute;
   }
-  &__navigation{
+
+  &__navigation {
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -77,16 +78,17 @@
     display: flex;
     justify-content: center;
 
-    button{
+    button {
       width: 20px;
       height: 20px;
       border-radius: 100%;
-     margin: 20px 15px;
-     border: none;
-    &:focus{
-      background-color: rgb(25, 25, 25);
-      border: 1px solid white;
-    }
+      margin: 20px 15px;
+      border: none;
+
+      &:focus {
+        background-color: rgb(25, 25, 25);
+        border: 1px solid white;
+      }
     }
   }
 }
