@@ -314,3 +314,38 @@ span.menu-item-description {
   button.cours__desc__suite:hover{ 
       color: white;
   }
+  ///////////////section page evenement/////////
+  .titreh5{
+      text-align: center;
+  }
+  p.endroit{
+      color: cadetblue;
+      text-align: center;
+  }
+  p.date{
+    color: cadetblue;
+    text-align: center;
+  }
+  p.heure{
+    color: cadetblue;
+    text-align: center;
+  }p.resume{
+    color: cadetblue;
+    text-align: center; 
+  }
+  p.organisateur{
+    color: cadetblue;
+    text-align: center;
+  }
+  .img_evenement{
+   
+  }
+  #evenement{
+      background-color: #161616;
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+      
+  }
+  
+  
