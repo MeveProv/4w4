@@ -322,6 +322,12 @@ button.cours__desc__suite:hover {
 .titreh5 {
     text-align: center;
 }
+.titreh5principal{
+    text-align: center; 
+color: rgb(114, 188, 191);
+letter-spacing:0.5rem;
+
+}
 
 p.endroit {
     color: cadetblue;
@@ -355,5 +361,6 @@ p.organisateur {
     display: flex;
     flex-direction: column;
     padding: 50px;
+    box-shadow: #f1f1f1 1px -1px 20px;
 
 }

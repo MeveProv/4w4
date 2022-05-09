@@ -668,6 +668,12 @@ button.cours__desc__suite:hover {
   text-align: center;
 }
 
+.titreh5principal {
+  text-align: center;
+  color: #72bcbf;
+  letter-spacing: 0.5rem;
+}
+
 p.endroit {
   color: cadetblue;
   text-align: center;
@@ -698,6 +704,7 @@ p.organisateur {
   display: flex;
   flex-direction: column;
   padding: 50px;
+  box-shadow: #f1f1f1 1px -1px 20px;
 }
 
 .site__header {
@@ -952,7 +959,6 @@ svg:hover {
     100% {
       opacity: 1;
       transform: translateX(0px);
-      background-color: #ad9fd869;
     }
   }
 }
@@ -1458,6 +1464,7 @@ div.animation__bloc:nth-of-type(5) {
   font-size: 1.2rem;
   text-shadow: 0px 0px 0px black;
   background-color: rgba(121, 244, 229, 0.504);
+  background-color: #e5b878;
   height: 150px;
   justify-content: center;
 }

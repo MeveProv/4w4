@@ -91,8 +91,10 @@
 
         background-color: rgb(41, 40, 40);
         color: hsl(231, 75%, 70%);
+        
         box-shadow: rgba(161, 244, 154, 0.863) 1px -1px 10px 2px;
         box-shadow: rgb(177, 150, 228) 1px -1px 10px 2px;
+       
 
         @media screen and (min-width : $largeur__media--tablette) {
             transform: scale(1.1) translateX(15px);
@@ -108,7 +110,7 @@
             height: 38px;
             width: 38px;
 
-
+            
             animation: animMenu 0.5s;
             animation-direction: alternate;
             animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55) ease-in-out;
@@ -182,7 +184,7 @@
         100% {
             opacity: 1;
             transform: translateX(0px);
-            background-color: #ad9fd869;
+            //background-color: #ad9fd869;
            
 
         }
