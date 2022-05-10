@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: 2022-4w4 Exercice- 4  Marie-Eve Provost
+theme name: 2022-4w4 TP2  Marie-Eve Provost
 Author: Marie-Eve Provost
 Author URI: https://github.com/MeveProv/4w4.git
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -666,37 +666,79 @@ button.cours__desc__suite:hover {
 
 .titreh5 {
   text-align: center;
+  background-color: #dbdada0a;
+  box-shadow: #c4c4c4 1px 1px 20px;
+  border-radius: 3px;
 }
 
 .titreh5principal {
   text-align: center;
   color: #72bcbf;
   letter-spacing: 0.5rem;
+  animation: anim_image 5s forwards ease-in-out;
+}
+
+@keyframes anim_titreEvenement {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.8);
+  }
 }
 
 p.endroit {
   color: cadetblue;
   text-align: center;
+  text-shadow: 1px 1px 10px #c0a8f5;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  box-shadow: #0a0a0a 1px 1px 20px;
+  width: 50%;
+  border: 0.5px solid white;
+  align-items: center;
+}
+
+p.endroit:hover {
+  background-color: rgba(255, 255, 255, 0.081);
+  color: #a3d7d9;
+  text-shadow: 1px 1px 10px #d7c9f6;
 }
 
 p.date {
   color: cadetblue;
   text-align: center;
+  text-shadow: 1px 1px 10px #c0a8f5;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
 
 p.heure {
   color: cadetblue;
   text-align: center;
+  text-shadow: 1px 1px 10px #c0a8f5;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
 
 p.resume {
   color: cadetblue;
   text-align: center;
+  text-shadow: 1px 1px 10px #c0a8f5;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
 
 p.organisateur {
   color: cadetblue;
   text-align: center;
+  text-shadow: 1px 1px 10px #c0a8f5;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
 
 #evenement {
@@ -705,6 +747,7 @@ p.organisateur {
   flex-direction: column;
   padding: 50px;
   box-shadow: #f1f1f1 1px -1px 20px;
+  justify-content: center;
 }
 
 .site__header {
@@ -919,16 +962,12 @@ svg:hover {
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55) ease-in-out;
 }
 
-.menu-principal-container {
-  animation: anim_menu 2s forwards ease-in-out;
-}
-
 @media screen and (min-width: 800px) {
   #burger {
-    z-index: 4;
+    display: none;
   }
   .menu-principal-container {
-    animation: anim_menu 2s forwards ease-in-out;
+    display: block;
   }
   @keyframes animMenu {
     from {
@@ -1463,7 +1502,6 @@ div.animation__bloc:nth-of-type(5) {
   color: #020202;
   font-size: 1.2rem;
   text-shadow: 0px 0px 0px black;
-  background-color: rgba(121, 244, 229, 0.504);
   background-color: #e5b878;
   height: 150px;
   justify-content: center;

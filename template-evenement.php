@@ -34,7 +34,7 @@ if( !empty( $image ) ): ?>
 <h5 class="titreh5">L'Heure</h5>
 <p class="heure">L'heure: <?php the_field('heure'); ?></p>
 <h5 class="titreh5">Résumé</h5>
-<p>Résumé de l'événement: <?php the_field('resume'); ?></p>
+<p class="resume">Résumé de l'événement: <?php the_field('resume'); ?></p>
 <h5 class="titreh5">Organisateur</h5>
 <p class="organisateur">L'organisteur de l'événement: <?php the_field('organisateur'); ?></p>
 

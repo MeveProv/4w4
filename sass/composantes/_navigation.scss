@@ -121,19 +121,19 @@
 }
 .menu-principal-container {
         //display: block;/////////////////////////////////
-        animation: anim_menu 2s forwards ease-in-out;
+        //animation: anim_menu 2s forwards ease-in-out;
     }
 
 /////Le menu de navigation pour le format tablette//////
 @media screen and (min-width : $largeur__media--tablette) {
     #burger {
-       // display: none;
-       z-index: 4;////////////////////////////////
+        display: none;
+       //z-index: 4;////////////////////////////////
     }
 
     .menu-principal-container {
-        //display: block;/////////////////////////////////
-        animation: anim_menu 2s forwards ease-in-out;
+        display: block;/////////////////////////////////
+        //animation: anim_menu 2s forwards ease-in-out;
         
     }
     
