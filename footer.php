@@ -76,7 +76,7 @@
 <div class="boite__caroussel">
     <button class="boite__caroussel__ferme">X</button>
    <section class="boite__caroussel__navigation"></section>
-    
+    <section class="boite__caroussel__img"></section>
   
  
 </div>
