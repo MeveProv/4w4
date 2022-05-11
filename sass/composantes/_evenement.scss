@@ -1,11 +1,29 @@
 ///////////////section page evenement/////////
 .titreh5 {
-    text-align: center;
-    background-color: #dbdada0a;
+    //text-align: center;
+    //background-color: #dbdada0a;
     //box-shadow: #c4c4c4 1px 1px 20px;
-    border-radius: 3px;
+    //border-radius: 3px;
+    color: rgb(234, 246, 246);
+    text-align: center;
+    text-shadow: 1px 1px 10px #c0a8f5;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    box-shadow: #0a0a0a 1px 1px 20px;
+    width: 100%;
+    border: 0.5px solid white;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.026);
     
     
+}
+.titreh5:hover{
+    color: rgb(255, 255, 255);
+  
+    //background-color: rgba(255, 255, 255, 0.081);
+    //color: rgb(163, 215, 217);
+    //text-shadow: 1px 1px 10px #d7c9f6;
+
 }
 
 .titreh5principal{
@@ -39,16 +57,11 @@ p.endroit {
     font-size: 2rem;
     letter-spacing: 0.2rem;
     box-shadow: #0a0a0a 1px 1px 20px;
-    width: 50%;
-    border: 0.5px solid white;
+    width: 100%;
     align-items: center;
     
 }
-p.endroit:hover{
-    background-color: rgba(255, 255, 255, 0.081);
-    color: rgb(163, 215, 217);
-    text-shadow: 1px 1px 10px #d7c9f6;
-}
+
 
 
 p.date {
@@ -57,6 +70,10 @@ p.date {
     text-shadow: 1px 1px 10px #c0a8f5;
     font-size: 2rem;
     letter-spacing: 0.2rem;
+    box-shadow: #0a0a0a 1px 1px 20px;
+    width: 100%;
+    align-items: center;
+    
 }
 
 p.heure {
@@ -65,6 +82,10 @@ p.heure {
     text-shadow: 1px 1px 10px #c0a8f5;
     font-size: 2rem;
     letter-spacing: 0.2rem;
+    box-shadow: #0a0a0a 1px 1px 20px;
+    width: 100%;
+    align-items: center;
+    
 }
 
 p.resume {
@@ -73,6 +94,10 @@ p.resume {
     text-shadow: 1px 1px 10px #c0a8f5;
     font-size: 2rem;
     letter-spacing: 0.2rem;
+    box-shadow: #0a0a0a 1px 1px 20px;
+    width: 100%;
+    align-items: center;
+    
 }
 
 p.organisateur {
@@ -81,6 +106,10 @@ p.organisateur {
     text-shadow: 1px 1px 10px #c0a8f5;
     font-size: 2rem;
     letter-spacing: 0.2rem;
+    box-shadow: #0a0a0a 1px 1px 20px;
+    width: 100%;
+    align-items: center;
+    
 }
 
 .img_evenement {}
@@ -93,4 +122,20 @@ p.organisateur {
     box-shadow: #f1f1f1 1px -1px 20px;
     justify-content: center;
 
+}
+.info{
+    background-color: #161616;
+    color: white;
+    width: 150px;
+    border: none;
+    box-shadow: #eeecec 1px 1px 20px;
+    border-radius: 100%;
+    height: 150px;
+   
+}
+.info:hover{
+    background-color: rgba(255, 255, 255, 0.081);
+    color: rgb(163, 215, 217);
+    text-shadow: 1px 1px 10px #d7c9f6;
+    box-shadow: hsl(101, 65%, 73%) 1px 1px 20px;
 }
