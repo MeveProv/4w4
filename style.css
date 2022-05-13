@@ -688,6 +688,12 @@ p.cours__desc {
   }
 }
 
+.cours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .site__header {
   background-color: #bbecee00;
   color: #f1eeee;
@@ -948,6 +954,7 @@ svg:hover {
   padding: 15px;
   display: flex;
   flex-direction: column;
+  background-image: url("https://s2.svgbox.net/pen-brushes.svg?ic=brush-4");
 }
 
 .site__footer__menu__ul {
@@ -1056,7 +1063,21 @@ svg:hover {
 }
 
 .site__footer__lien a:hover {
-  transform: scale(1) translateX(0px);
+  transform: translateX(0px);
+}
+
+.menu-externe-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-externe-container a {
+  align-items: center;
+  padding: 20px;
+}
+
+.menu-externe-container a:hover {
+  transform: scale(1);
 }
 
 @media screen and (min-width: 800px) {
@@ -1352,6 +1373,7 @@ div.animation__bloc:nth-of-type(5) {
 
 .menu-accueil-container .menu .menu-item {
   flex-direction: column;
+  justify-content: center;
 }
 
 .menu-accueil-container .menu .menu-item a {
@@ -1364,11 +1386,15 @@ div.animation__bloc:nth-of-type(5) {
   transition: 0.15s;
   align-items: center;
   width: 200px;
+  height: 70px;
+  font-size: 1rem;
+  align-items: center;
 }
 
 @media screen and (min-width: 800px) {
   .menu-accueil-container .menu .menu-item a {
     height: 200px;
+    font-size: 1.2rem;
   }
 }
 
@@ -1435,6 +1461,7 @@ div.animation__bloc:nth-of-type(5) {
 .menu-evenement-container .menu .menu-item {
   flex-direction: column;
   padding: 20px;
+  justify-content: center;
 }
 
 .menu-evenement-container .menu .menu-item a {
@@ -1444,8 +1471,10 @@ div.animation__bloc:nth-of-type(5) {
   text-shadow: 0px 0px 0px black;
   background-color: #e5b878;
   background-color: #89ba73;
-  height: 150px;
+  height: 100px;
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media screen and (min-width: 800px) {
@@ -1453,6 +1482,8 @@ div.animation__bloc:nth-of-type(5) {
     height: 100px;
     width: 250px;
     width: 350px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 

@@ -74,6 +74,7 @@
         .menu-item {
 
             flex-direction: column;
+            justify-content: center;
 
 
             a {
@@ -90,11 +91,13 @@
                 transition: 0.15s;
                 align-items: center;
                 width: 200px;
-
+                height: 70px;
+                font-size: 1rem;
+                align-items: center;
 
                 @media screen and (min-width : $largeur__media--tablette) {
                     height: 200px;
-
+                    font-size: 1.2rem;
                 }
 
                 .menu-item-description {
@@ -185,6 +188,7 @@
 
             flex-direction: column;
             padding: 20px;
+            justify-content: center;
 
             a {
                 background-color: aliceblue;
@@ -192,17 +196,20 @@
                 font-size: 1.2rem;
                 text-shadow: 0px 0px 0px black;
                 ////////////background-color: rgba(121, 244, 229, 0.504);
-                background-color: rgb(229, 184, 120) ;
+                background-color: rgb(229, 184, 120);
                 background-color: hsl(101, 34%, 59%);
                 // flex-wrap: wrap;
-                height: 150px;
+                height: 100px;
                 justify-content: center;
-
+                padding-left: 20px;
+                padding-right: 20px;
 
                 @media screen and (min-width : $largeur__media--tablette) {
                     height: 100px;
                     width: 250px;
                     width: 350px;
+                    padding-left: 0px;
+                    padding-right: 0px;
                 }
 
                 .menu-item-description {

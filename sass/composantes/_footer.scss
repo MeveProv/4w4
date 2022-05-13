@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   //background-image: url('https://s2.svgbox.net/loaders.svg?ic=puff');
-  //background-image: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-4');
+  background-image: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-4');
 
 
 
@@ -154,5 +154,18 @@
 }
 
 .site__footer__lien a:hover {
-  transform: scale(1) translateX(0px);
+  transform:translateX(0px);
+}
+.menu-externe-container{
+  display: flex;
+  justify-content: center;
+}
+.menu-externe-container a{
+
+align-items: center;
+padding: 20px;
+&:hover {
+  transform: scale(1);
+
+}
 }
