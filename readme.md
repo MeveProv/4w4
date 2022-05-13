@@ -1,9 +1,9 @@
-# Exrcice #3 - 4W4 - Conception d'interface et développement Web
+# TP2 - 4W4 - Conception d'interface et développement Web
 ### Auteur : Marie-Eve Provost
 ### Date de remise : avril 2022
 
 ```
- Exercice3 
+ TP2 
  Développer un site constitué de plusieurs modèles,  gabarits de modèle et modèle de page «template» qui permettront d’afficher dans un design original
  Une page d’accueil personnalisé 
  Deux menus de blocs de navigations permettant d’accéder aux pages

@@ -13,7 +13,7 @@
   }
 
   box-shadow: rgb(241, 241, 241) 1px -1px 20px; //blanc cest meiux 
-  
+
 
 
 
@@ -22,7 +22,7 @@
     font-family: $font__titre;
     ////////////padding-left: 10px;
     padding-left: 100px;
-   
+
 
   }
 
@@ -33,7 +33,7 @@
 
     @media screen and (min-width : $largeur__media--tablette) {
       padding-left: 30px; ///90px si cadrer
-     
+
     }
   }
 }

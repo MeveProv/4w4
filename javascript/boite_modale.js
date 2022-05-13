@@ -10,7 +10,7 @@
  console.log(this.tagName);
  boite__modale.classList.add('boite__modale__ouvrir')
  
- //boite__modale.classList.remove('boite__modale__ouvrir') 
+ 
  boite__modale__texte.innerHTML= this.parentNode.parentNode.children[0].innerHTML;
      })
  }

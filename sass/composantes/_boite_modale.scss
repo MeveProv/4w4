@@ -27,6 +27,11 @@
   }
 }
 
+.boite__caroussel img {
+  box-shadow: transparent 1px -1px 20px;
+  border: none;
+}
+
 
 .boite__modale__texte {
   text-align: center;
@@ -59,16 +64,17 @@
   top: 2.5%;
   left: 2.5%;
   background-color: rgb(20, 20, 20);
+
   @media screen and (min-width : $largeur__media--tablette) {
-  width: 75%;
-  height: 75%;
-  top: 12.5%;
-  left: 12.5%;
- 
+    width: 75%;
+    height: 75%;
+    top: 12.5%;
+    left: 12.5%;
+
   }
 
 
-  
+
   &__img {
     object-fit: cover;
     width: 100%;
@@ -77,7 +83,8 @@
     left: 0;
     position: absolute;
     overflow: hidden;
-    
+
+
     img {
       object-fit: cover;
       width: 100%;
@@ -87,15 +94,15 @@
       position: absolute;
       opacity: 0;
       transform: translateX(-100%);
-      
+
       transition: all 1s ease-in-out;
-     
+      box-shadow: transparent 1px -1px 20px;
 
 
-      &.img--ouvrir{
+      &.img--ouvrir {
         transform: translateX(0);
         opacity: 1;
-       
+
       }
     }
   }
@@ -116,40 +123,44 @@
       border: none;
       color: black;
       transition: 0.4s ease-in-out;
-&:checked{
-  animation: anim_menu 0.5s;
-  animation-direction: alternate;
-  animation-timing-function:  ease-in-out;
- 
-}
-      &:focus{
-       // background-color: rgb(25, 25, 25);
+
+      &:checked {
+        animation: anim_menu 0.5s;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+
+      }
+
+      &:focus {
+        // background-color: rgb(25, 25, 25);
         ///border: 1px solid white;
       }
     }
   }
 }
+
 @keyframes anim_menu {
   0% {
-      opacity: 0.1;
-      transform:  scale(1.6);
-     
+    opacity: 0.1;
+    transform: scale(1.6);
+
   }
 
   50% {
-      opacity: 0.5;
-      
+    opacity: 0.5;
+
 
   }
 
   100% {
-      opacity: 1;
-      transform: translateY(0px);
-      //background-color: #ad9fd869;
-     
+    opacity: 1;
+    transform: translateY(0px);
+    //background-color: #ad9fd869;
+
 
   }
 }
+
 .boite__caroussel__ferme {
   z-index: 5;
   background-color: transparent;

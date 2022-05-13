@@ -1551,6 +1551,11 @@ div.animation__bloc:nth-of-type(5) {
   transform: scale(1);
 }
 
+.boite__caroussel img {
+  box-shadow: transparent 1px -1px 20px;
+  border: none;
+}
+
 .boite__modale__texte {
   text-align: center;
 }
@@ -1614,6 +1619,7 @@ div.animation__bloc:nth-of-type(5) {
   opacity: 0;
   transform: translateX(-100%);
   transition: all 1s ease-in-out;
+  box-shadow: transparent 1px -1px 20px;
 }
 
 .boite__caroussel__img img.img--ouvrir {

@@ -14,53 +14,53 @@
     border: 0.5px solid white;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.026);
-    
-    
+
+
 }
-.titreh5:hover{
+
+.titreh5:hover {
     color: rgb(255, 255, 255);
-  
-    //background-color: rgba(255, 255, 255, 0.081);
-    //color: rgb(163, 215, 217);
-    //text-shadow: 1px 1px 10px #d7c9f6;
+
+   
 
 }
 
-.titreh5principal{
-    text-align: center; 
-color: rgb(114, 188, 191);
-letter-spacing:0.5rem;
-animation: anim_image 5s forwards ease-in-out;
+.titreh5principal {
+    text-align: center;
+    color: rgb(114, 188, 191);
+    letter-spacing: 0.5rem;
+    animation: anim_image 5s forwards ease-in-out;
 
 }
+
 @keyframes anim_titreEvenement {
     0% {
-      opacity: 0.1;
+        opacity: 0.1;
     }
 
     50% {
-      opacity: 0.5;
+        opacity: 0.5;
 
     }
 
     100% {
-      opacity: 1;
-      transform: scale(0.8);
+        opacity: 1;
+        transform: scale(0.8);
     }
 
-  }
+}
 
 p.endroit {
     color: cadetblue;
     text-align: center;
     text-shadow: 1px 1px 10px #c0a8f5;
     font-size: 2rem;
-    
+
     letter-spacing: 0.2rem;
     box-shadow: #0a0a0a 1px 1px 20px;
     width: 100%;
     align-items: center;
-    
+
 }
 
 
@@ -74,7 +74,7 @@ p.date {
     box-shadow: #0a0a0a 1px 1px 20px;
     width: 100%;
     align-items: center;
-    
+
 }
 
 p.heure {
@@ -86,7 +86,7 @@ p.heure {
     box-shadow: #0a0a0a 1px 1px 20px;
     width: 100%;
     align-items: center;
-    
+
 }
 
 p.resume {
@@ -98,7 +98,7 @@ p.resume {
     box-shadow: #0a0a0a 1px 1px 20px;
     width: 100%;
     align-items: center;
-    
+
 }
 
 p.organisateur {
@@ -106,12 +106,12 @@ p.organisateur {
     text-align: center;
     text-shadow: 1px 1px 10px #c0a8f5;
     font-size: 2rem;
-    
+
     letter-spacing: 0.2rem;
     box-shadow: #0a0a0a 1px 1px 20px;
     width: 100%;
     align-items: center;
-    
+
 }
 
 .img_evenement {}
@@ -126,7 +126,8 @@ p.organisateur {
     align-items: center;
 
 }
-.info{
+
+.info {
     background-color: #161616;
     color: white;
     height: 75px;
@@ -134,12 +135,14 @@ p.organisateur {
     border: none;
     box-shadow: #eeecec 1px 1px 20px;
     border-radius: 100%;
+
     @media screen and (min-width : $largeur__media--tablette) {
-    height: 100px;
-    width: 100px;
+        height: 100px;
+        width: 100px;
     }
 }
-.info:hover{
+
+.info:hover {
     background-color: rgba(255, 255, 255, 0.081);
     color: rgb(163, 215, 217);
     text-shadow: 1px 1px 10px #d7c9f6;

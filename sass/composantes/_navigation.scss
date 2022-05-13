@@ -10,13 +10,13 @@
 }
 
 #chk-burger:checked~#burger {
-   // transform: rotate(90deg);
+    // transform: rotate(90deg);
 }
 
 .menu-principal-container {
     display: none;
-   
-    
+
+
 }
 
 #chk-burger:checked~.menu-principal-container {
@@ -36,7 +36,7 @@
     text-align: center;
     margin: 1px;
     padding: 1px;
-    
+
 
 
 
@@ -73,21 +73,21 @@
         color: aqua;
         background-color: rgb(78, 78, 78);
         transition: 0.4s ease-in-out;
-font-size: 1.2rem;
+        font-size: 1.2rem;
         font-size: 1rem;
-       
-       
-        
+
+
+
 
 
         //font-size: 1rem;
         box-shadow: rgb(34, 34, 34) 1px -1px 10px 3px;
 
         padding-left: 20px;
-    
+
 
     }
-    
+
 
     svg {
         transition: 0.4s ease-in-out;
@@ -99,10 +99,10 @@ font-size: 1.2rem;
         font-size: 1.2rem;
         background-color: rgb(41, 40, 40);
         color: hsl(231, 75%, 70%);
-        
+
         box-shadow: rgba(161, 244, 154, 0.863) 1px -1px 10px 2px;
         box-shadow: rgb(177, 150, 228) 1px -1px 10px 2px;
-       
+
 
         @media screen and (min-width : $largeur__media--tablette) {
             transform: scale(1.1) translateX(15px);
@@ -118,7 +118,7 @@ font-size: 1.2rem;
             height: 38px;
             width: 38px;
 
-            
+
             animation: animMenu 0.5s;
             animation-direction: alternate;
             animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55) ease-in-out;
@@ -127,27 +127,28 @@ font-size: 1.2rem;
 
 
 }
+
 .menu-principal.menu-item a {
-   
-   
-        //display: block;/////////////////////////////////
-        //animation: anim_menu 2s forwards ease-in-out;
-    }
-    
+
+
+    //display: block;/////////////////////////////////
+    //animation: anim_menu 2s forwards ease-in-out;
+}
+
 
 /////Le menu de navigation pour le format tablette//////
 @media screen and (min-width : $largeur__media--tablette) {
     #burger {
         display: none;
-       //z-index: 4;////////////////////////////////
+        //z-index: 4;////////////////////////////////
     }
 
     .menu-principal-container {
-        display: block;/////////////////////////////////
+        display: block; /////////////////////////////////
         //animation: anim_menu 2s forwards ease-in-out;
-        
+
     }
-    
+
 
     @keyframes animMenu {
         from {
@@ -162,12 +163,7 @@ font-size: 1.2rem;
             color: cyan;
         }
 
-        50% {
-            
-          
-               
-            
-        }
+        50% {}
 
         75% {}
 
@@ -188,15 +184,15 @@ font-size: 1.2rem;
 
         50% {
             opacity: 0.5;
-          
+
 
         }
 
         100% {
             opacity: 1;
             transform: translateX(0px);
-            //background-color: #ad9fd869;
-           
+
+
 
         }
     }
