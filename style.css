@@ -1526,6 +1526,7 @@ div.animation__bloc:nth-of-type(5) {
   height: 95%;
   top: 2.5%;
   left: 2.5%;
+  background-color: #141414;
 }
 
 @media screen and (min-width: 800px) {
