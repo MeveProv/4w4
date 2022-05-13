@@ -64,7 +64,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-
+        align-items: center;
         //justify-content: flex-start;
         @media screen and (min-width : $largeur__media--tablette) {
             align-items: center;
@@ -84,8 +84,7 @@
                 border: solid 3px hsl(240, 6%, 91%);
                 transform: scale(1.1);
 
-
-
+                
 
                 .cours__desc {
                     color: rgb(250, 250, 250);
@@ -309,13 +308,33 @@ button.cours__desc__suite {
     color: cyan;
     padding-left: 20px;
     text-decoration: underline;
-
+    font-weight: bold;
     text-align: center;
-
+   padding: 10px;
+  
 }
 
 button.cours__desc__suite:hover {
     color: white;
     color: hsl(101, 49%, 69%);;
 }
+p.cours__desc{
+    display: flex;
+    flex-direction:column;
+    
+ 
+}
+.tri{
+    @media screen and (min-width : $largeur__media--tablette) {
+    color: #8d96c2;
+    padding-top: 0;
+    }
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+   
+    text-align: center;
+    color: #8bf2e3;
+    padding-top: 10px;
+}
+
 

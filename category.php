@@ -7,8 +7,8 @@
     )); 
     ?>
     <section class="formation">
-        <a href="?cletri=title&ordre=asc">Tri Ascendant</a>
-        <a href="?cletri=title&ordre=desc">Tri Decendant</a>
+        <a class="tri" href="?cletri=title&ordre=asc">Ascendant</a>
+        <a class="tri"href="?cletri=title&ordre=desc">Decendant</a>
         
         <?php
 

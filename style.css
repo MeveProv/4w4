@@ -468,6 +468,7 @@ COMPOSANTES
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 10px;
 }
 
@@ -657,12 +658,34 @@ button.cours__desc__suite {
   color: cyan;
   padding-left: 20px;
   text-decoration: underline;
+  font-weight: bold;
   text-align: center;
+  padding: 10px;
 }
 
 button.cours__desc__suite:hover {
   color: white;
   color: #a2d789;
+}
+
+p.cours__desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.tri {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  color: #8bf2e3;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .tri {
+    color: #8d96c2;
+    padding-top: 0;
+  }
 }
 
 .site__header {
@@ -1760,16 +1783,24 @@ p.organisateur {
   padding: 50px;
   box-shadow: #f1f1f1 1px -1px 20px;
   justify-content: center;
+  align-items: center;
 }
 
 .info {
   background-color: #161616;
   color: white;
-  width: 150px;
+  height: 75px;
+  width: 75px;
   border: none;
   box-shadow: #eeecec 1px 1px 20px;
   border-radius: 100%;
-  height: 150px;
+}
+
+@media screen and (min-width: 800px) {
+  .info {
+    height: 100px;
+    width: 100px;
+  }
 }
 
 .info:hover {

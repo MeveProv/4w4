@@ -55,6 +55,7 @@ p.endroit {
     text-align: center;
     text-shadow: 1px 1px 10px #c0a8f5;
     font-size: 2rem;
+    
     letter-spacing: 0.2rem;
     box-shadow: #0a0a0a 1px 1px 20px;
     width: 100%;
@@ -105,6 +106,7 @@ p.organisateur {
     text-align: center;
     text-shadow: 1px 1px 10px #c0a8f5;
     font-size: 2rem;
+    
     letter-spacing: 0.2rem;
     box-shadow: #0a0a0a 1px 1px 20px;
     width: 100%;
@@ -121,17 +123,21 @@ p.organisateur {
     padding: 50px;
     box-shadow: #f1f1f1 1px -1px 20px;
     justify-content: center;
+    align-items: center;
 
 }
 .info{
     background-color: #161616;
     color: white;
-    width: 150px;
+    height: 75px;
+    width: 75px;
     border: none;
     box-shadow: #eeecec 1px 1px 20px;
     border-radius: 100%;
-    height: 150px;
-   
+    @media screen and (min-width : $largeur__media--tablette) {
+    height: 100px;
+    width: 100px;
+    }
 }
 .info:hover{
     background-color: rgba(255, 255, 255, 0.081);
