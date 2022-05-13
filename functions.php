@@ -20,6 +20,7 @@ function cidw_4w4_enqueue(){
     filemtime(get_template_directory() . '/javascript/caroussel.js'),
    true );
    
+   
    if(is_category('cours')){
        wp_enqueue_script('cidw-4w4-js-boite_modale');
    }

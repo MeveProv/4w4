@@ -866,6 +866,7 @@ svg:hover {
   background-color: #4e4e4e;
   transition: 0.4s ease-in-out;
   font-size: 1.2rem;
+  font-size: 1rem;
   box-shadow: #222222 1px -1px 10px 3px;
   padding-left: 20px;
 }
@@ -876,6 +877,7 @@ svg:hover {
 }
 
 .menu-item a:hover {
+  font-size: 1.2rem;
   background-color: #292828;
   color: #798aec;
   box-shadow: rgba(161, 244, 154, 0.863) 1px -1px 10px 2px;
@@ -1604,6 +1606,27 @@ div.animation__bloc:nth-of-type(5) {
   margin: 20px 15px;
   border: none;
   color: black;
+  transition: 0.4s ease-in-out;
+}
+
+.boite__caroussel__navigation .bouton:checked {
+  animation: anim_menu 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes anim_menu {
+  0% {
+    opacity: 0.1;
+    transform: scale(1.6);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .boite__caroussel__ferme {
