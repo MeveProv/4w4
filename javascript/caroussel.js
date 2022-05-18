@@ -31,7 +31,7 @@
             e.preventDefault
             console.log(e)
             console.log(this.getAttribute('checked'))
-            initialiseRadioBouton();
+            //initialiseRadioBouton();
             boite__caroussel__img.children[this.dataset.index].classList.remove('img--ouvrir')
             boite__caroussel__img.children[this.dataset.index].classList.add('img--ouvrir')
         //elmImg.setAttribute('src', galerie__img[index].getAttribute('src'))
@@ -55,10 +55,10 @@
     boite__caroussel__ferme.addEventListener('mousedown', function () {
         boite__caroussel.classList.remove('boite__caroussel__ouvrir')
     })
-    function initialiseRadioBouton(){
-        for(let i = 0; i < boite__caroussel__navigation.children.length; i++)
-        if(boite__caroussel__navigation.children[1].checked == false){
-            boite__caroussel__img.children[i].classList.remove('img--ouvrir');
-        }
-    }
+   // function initialiseRadioBouton(){
+       // for(let i = 0; i < boite__caroussel__navigation.children.length; i++)
+       // if(boite__caroussel__navigation.children[1].checked == false){
+          //  boite__caroussel__img.children[i].classList.remove('img--ouvrir');
+        //}
+   // }
 })()
