@@ -1190,7 +1190,7 @@ h4 {
   color: #f7f8f8;
   font-size: clamp(1rem, 3vw, 3rem);
   z-index: 3;
-  padding-top: 50px;
+  padding-top: 200px;
   padding-bottom: 50px;
   text-shadow: 1px 1px 20px #dbdada;
   letter-spacing: 0.2rem;
@@ -1518,16 +1518,32 @@ div.animation__bloc:nth-of-type(5) {
   background-color: aqua;
   background-color: rgba(121, 244, 229, 0.504);
   display: flex;
+  box-shadow: #000000ec 1px 1px 30px 3px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .menu-atelier-container .menu {
-  height: 400px;
+  height: 1000px;
   width: 800px;
 }
 
 .menu-atelier-container .menu-item {
   flex-direction: column;
   justify-content: center;
+}
+
+.menu-atelier-container a {
+  height: 200px;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  display: block;
+}
+
+.menu-atelier-container .menu-item-description {
+  color: cyan;
+  font-size: 1.5rem;
 }
 
 .menu-evenement-container {
@@ -1931,6 +1947,130 @@ p.organisateur {
   box-shadow: #f1f1f1 1px -1px 20px;
   justify-content: center;
   align-items: center;
+}
+
+.info {
+  background-color: #161616;
+  color: white;
+  height: 75px;
+  width: 75px;
+  border: none;
+  box-shadow: #eeecec 1px 1px 20px;
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .info {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.info:hover {
+  background-color: rgba(255, 255, 255, 0.081);
+  color: #a3d7d9;
+  text-shadow: 1px 1px 10px #d7c9f6;
+  box-shadow: #aae78d 1px 1px 20px;
+}
+
+.titreh5 {
+  color: #eaf6f6;
+  text-align: center;
+  text-shadow: 1px 1px 10px #c0a8f5;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  box-shadow: #0a0a0a 1px 1px 20px;
+  width: 100%;
+  border: 0.5px solid white;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.026);
+  z-index: 2;
+  background-color: #d2b76f;
+}
+
+.titreh5:hover {
+  color: white;
+}
+
+.titreh5principal {
+  text-align: center;
+  color: #72bcbf;
+  letter-spacing: 0.5rem;
+  animation: anim_image 5s forwards ease-in-out;
+}
+
+@keyframes anim_titreEvenement {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.8);
+  }
+}
+
+p.endroit {
+  color: cadetblue;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  box-shadow: #0a0a0a 1px 1px 20px;
+  width: 100%;
+  align-items: center;
+}
+
+p.date {
+  color: cadetblue;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  box-shadow: #0a0a0a 1px 1px 20px;
+  width: 100%;
+  align-items: center;
+}
+
+p.heure {
+  color: cadetblue;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  box-shadow: #0a0a0a 1px 1px 20px;
+  width: 100%;
+  align-items: center;
+}
+
+p.resume {
+  color: cadetblue;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  box-shadow: #0a0a0a 1px 1px 20px;
+  width: 100%;
+  align-items: center;
+}
+
+p.organisateur {
+  color: cadetblue;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  box-shadow: #0a0a0a 1px 1px 20px;
+  width: 100%;
+  align-items: center;
+}
+
+#atelier {
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  box-shadow: #f1f1f1 1px -1px 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #508082;
 }
 
 .info {

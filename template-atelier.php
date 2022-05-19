@@ -12,7 +12,7 @@
 get_header();
 
 ?>
-<main class="site__main" id="evenement">
+<main class="site__main" id="atelier">
 
 
 <?php if(have_posts()):the_post();?>
