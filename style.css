@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: 2022-4w4 TP2  Marie-Eve Provost
+theme name: 2022-4w4 Epreuve Finale  Marie-Eve Provost
 Author: Marie-Eve Provost
 Author URI: https://github.com/MeveProv/4w4.git
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -2013,9 +2013,10 @@ p.organisateur {
 }
 
 p.endroit {
-  color: cadetblue;
+  color: #739393;
   text-align: center;
   font-size: 2rem;
+  text-shadow: 0px 0px 0px #c0a8f5;
   letter-spacing: 0.2rem;
   box-shadow: #0a0a0a 1px 1px 20px;
   width: 100%;
@@ -2070,7 +2071,7 @@ p.organisateur {
   box-shadow: #f1f1f1 1px -1px 20px;
   justify-content: center;
   align-items: center;
-  background-color: #508082;
+  background-color: #1d1e1e;
 }
 
 .info {

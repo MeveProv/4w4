@@ -1,9 +1,9 @@
-# TP2 - 4W4 - Conception d'interface et développement Web
+# Epreuve Finale - 4W4 - Conception d'interface et développement Web
 ### Auteur : Marie-Eve Provost
 ### Date de remise : Mai 2022
 
 ```
- TP2 
+ Epreuve finale 
  Bonne vacance Eddy !!!
 
 github page: https://meveprov.github.io/4w4/
