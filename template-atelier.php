@@ -60,6 +60,10 @@ if( !empty( $image ) ): ?>
 <h5 class="titreh5">Local ou se déroulera l’atelier</h5>
 <p class="endroit">Local ou se déroulera l’atelier<?php the_field('local'); ?></p>
 
+<h5 class="titreh5">Durée</h5>
+<p class="endroit">Durée de l’atelier<?php the_field('local'); ?></p>
+
+
 <?php
     endif;
 ?>

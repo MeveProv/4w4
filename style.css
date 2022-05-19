@@ -1533,6 +1533,25 @@ div.animation__bloc:nth-of-type(5) {
   justify-content: center;
 }
 
+.menu-atelier-container .menu-item :hover {
+  background-color: #2e2e30;
+  transform: translateY(0px);
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+.menu-atelier-container .iconeMenuAtelier {
+  color: #89ba73;
+}
+
+.menu-atelier-container .iconeMenuAtelier :hover {
+  color: #f4f9f9;
+  transform: rotateZ(0deg);
+  margin-right: 5px;
+  box-shadow: cyan 0px 0px 0px 0px;
+}
+
 .menu-atelier-container a {
   height: 200px;
   justify-content: center;
