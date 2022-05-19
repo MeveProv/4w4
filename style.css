@@ -635,8 +635,8 @@ p.cours__dep {
   color: #8d96c2;
 }
 
-span.menu-item-description {
-  display: none;
+.span.menu-item-description {
+  display: block;
 }
 
 .cours__sigle {
@@ -1512,6 +1512,22 @@ div.animation__bloc:nth-of-type(5) {
     animation-duration: 0.5s;
     animation-timing-function: ease-in;
   }
+}
+
+.menu-atelier-container {
+  background-color: aqua;
+  background-color: rgba(121, 244, 229, 0.504);
+  display: flex;
+}
+
+.menu-atelier-container .menu {
+  height: 400px;
+  width: 800px;
+}
+
+.menu-atelier-container .menu-item {
+  flex-direction: column;
+  justify-content: center;
 }
 
 .menu-evenement-container {

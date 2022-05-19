@@ -169,6 +169,26 @@
 
 }
 
+//////////////////menu atelier
+
+.menu-atelier-container {
+    background-color: aqua;
+    background-color: rgba(121, 244, 229, 0.504);
+    display: flex;
+   .menu{
+      
+       height: 400px;
+       width: 800px;
+   }
+   .menu-item {
+    flex-direction: column;
+    
+    justify-content: center;
+
+   }
+}
+
+
 .menu-evenement-container {
 
     display: flex;

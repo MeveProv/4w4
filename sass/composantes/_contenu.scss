@@ -284,13 +284,13 @@ p.cours__dep {
 }
 
 ///effacer les description
-span.menu-item-description {
-    display: none;
-}
+//span.menu-item-description {
+    //display: none;
+//}
 /////////////////exam/////////////////////////
-//.span.menu-item-description{
-   // display: block;
-  //}
+.span.menu-item-description{
+   display: block;
+  }
 
 .cours__sigle {
     text-align: center;
